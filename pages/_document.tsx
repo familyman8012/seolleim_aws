@@ -18,10 +18,10 @@ function MyDocument() {
           defer
           src="https://cdnjs.cloudflare.com/ajax/libs/quill/2.0.0-dev.3/quill.min.js"
         ></script>
-        <script
+        {/* <script
           defer
           src="https://cultureplace.s3.ap-northeast-2.amazonaws.com/script/channeltalk.js"
-        ></script>
+        ></script> */}
         {/* <script defer src="/script/quill/quill.htmlEditButton.min.js"></script> */}
 
         <script

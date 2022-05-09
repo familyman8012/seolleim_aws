@@ -59,11 +59,11 @@ function Index() {
                       설레임의 새로운 소식 확인하러가기
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/info">
                       뮤지컬, 연극 음악 박스오피스 보러가기
                     </Link>
-                  </li>
+                  </li> */}
                   <li
                     onClick={() =>
                       signOut({
@@ -91,11 +91,11 @@ function Index() {
                       설레임의 새로운 소식 확인하러가기
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/info">
                       뮤지컬, 연극 음악 박스오피스 보러가기
                     </Link>
-                  </li>
+                  </li> */}
                   <li onClick={() => router.push("/signin")}>로그인</li>
                 </ul>
               </div>
