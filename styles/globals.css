@@ -222,7 +222,8 @@ caption {
   background: blue;
 }
 
-* ●●●●●●●●●● 기본설정 */ body {
+/* ●●●●●●●●●● 기본설정 */
+body {
   margin: 0;
   padding: 0;
   background: #ffffff;
@@ -390,13 +391,15 @@ input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
   border: 0;
-} /* number 오른쪽에 나타나는 화살표 버튼없애기 */
+}
+/* number 오른쪽에 나타나는 화살표 버튼없애기 */
 input[type="date"]::-webkit-outer-spin-button,
 input[type="date"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
   border: 0;
-} /* 오른쪽에 나타나는 화살표 버튼없애기 */
+}
+/* 오른쪽에 나타나는 화살표 버튼없애기 */
 input {
   color: #999;
   background: transparent;
@@ -423,7 +426,9 @@ select {
   cursor: pointer;
   font-size: inherit !important;
   font-family: inherit !important;
-} /* 셀렉트 오류때문에 필수! */
+}
+
+/* 셀렉트 오류때문에 필수! */
 
 /* placeholder는 아직 브라우저 환경때문에 PC버전에서 제한적 사용 */
 input::-webkit-input-placeholder {
@@ -438,7 +443,6 @@ textarea::-webkit-textarea-placeholder {
 textarea::textarea-placeholder {
   color: #999;
 }
-
 /* layout */
 #warp {
   width: 100%;
@@ -495,13 +499,16 @@ textarea::textarea-placeholder {
   background: none !important;
   width: 1000px;
   margin: 50px auto;
-} /* 로그인등과같은 별도의 박스가 필요한 경우 */
+}
+/* 로그인등과같은 별도의 박스가 필요한 경우 */
 .common_none {
   border: 0 !important;
   background: none !important;
   width: 1000px;
   margin: 0 auto;
-} /* 별도로 묶을경우 */
+}
+
+/* 별도로 묶을경우 */
 
 @font-face {
   font-family: "OTWelcomeBA";
@@ -619,7 +626,6 @@ textarea::textarea-placeholder {
 /* .swiper-slide-duplicate[data-swiper-slide-index="5"] div {
   background: url("/images/mainvis0.jpg") no-repeat left top;
 } */
-
 @media screen and (max-width: 1300px) {
   html,
   body {
@@ -779,85 +785,86 @@ div[data-swiper-slide-index="0"] .txtbox .txt3 {
     color: #000;
     font-weight: 400;
   }
+}
 
-  /* horiz */
-  @media screen and (max-width: 370px) {
-    .item_list .title_box .tit {
-      padding-left: 0;
-      background: none !important;
-    }
-    .item_list .price_box .number {
-      padding-left: 5px;
-    }
-    .item_list .price_box .info {
-      padding-right: 5px;
-    }
+/* horiz */
+@media screen and (max-width: 370px) {
+  .item_list .title_box .tit {
+    padding-left: 0;
+    background: none !important;
   }
-
-  /* horiz */
-  @media screen and (max-width: 340px) {
-    .item_list .info_box {
-      padding: 0 !important;
-    }
-    .item_list .title_box {
-      float: none;
-      overflow: hidden;
-    }
-    .item_list .title_box .tit_box {
-      padding: 0;
-      width: 50%;
-      float: left;
-      text-align: center;
-    }
-    .item_list .title_box .tit {
-      padding-left: 23px;
-      padding-right: 5px;
-    }
-    .item_list .title_box .man .tit {
-      color: #2d82be;
-      background: transparent url("http://www.saemip.com/m/images/ic_man.png")
-        3px center no-repeat !important;
-      background-size: 16px !important;
-    }
-    .item_list .title_box .woman .tit {
-      color: #e23354;
-      background: transparent url("http://www.saemip.com/m/images/ic_woman.png")
-        3px center no-repeat !important;
-      background-size: 16px !important;
-    }
-    .item_list .price_box {
-      float: none;
-      text-align: center;
-    }
-    .item_list .price_box ul {
-      display: block;
-    }
-    .item_list .price_box li {
-      float: none;
-      text-align: center;
-      width: 100%;
-    }
-    .item_list .price_box .info {
-      float: left;
-      width: 50%;
-      padding: 0 5px;
-      box-sizing: border-box;
-    }
-    .item_list .price_box .num_box {
-      float: left;
-      width: 50%;
-      box-sizing: border-box;
-      padding: 0;
-      text-align: center;
-    }
-    .item_list .price_box .number {
-      padding: 0;
-      margin-left: 0;
-      font-size: 12px;
-    }
+  .item_list .price_box .number {
+    padding-left: 5px;
   }
+  .item_list .price_box .info {
+    padding-right: 5px;
+  }
+}
 
-  /* .minishop_item_list .item_box .info_box .add_txt {color:#999;}
+/* horiz */
+@media screen and (max-width: 340px) {
+  .item_list .info_box {
+    padding: 0 !important;
+  }
+  .item_list .title_box {
+    float: none;
+    overflow: hidden;
+  }
+  .item_list .title_box .tit_box {
+    padding: 0;
+    width: 50%;
+    float: left;
+    text-align: center;
+  }
+  .item_list .title_box .tit {
+    padding-left: 23px;
+    padding-right: 5px;
+  }
+  .item_list .title_box .man .tit {
+    color: #2d82be;
+    background: transparent url("http://www.saemip.com/m/images/ic_man.png") 3px
+      center no-repeat !important;
+    background-size: 16px !important;
+  }
+  .item_list .title_box .woman .tit {
+    color: #e23354;
+    background: transparent url("http://www.saemip.com/m/images/ic_woman.png")
+      3px center no-repeat !important;
+    background-size: 16px !important;
+  }
+  .item_list .price_box {
+    float: none;
+    text-align: center;
+  }
+  .item_list .price_box ul {
+    display: block;
+  }
+  .item_list .price_box li {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  .item_list .price_box .info {
+    float: left;
+    width: 50%;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+  .item_list .price_box .num_box {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0;
+    text-align: center;
+  }
+  .item_list .price_box .number {
+    padding: 0;
+    margin-left: 0;
+    font-size: 12px;
+  }
+}
+
+/* .minishop_item_list .item_box .info_box .add_txt {color:#999;}
 .minishop_item_list .item_box .info_box .item_title {font-size:15px; color:#000; letter-spacing:-0.5px; font-weight:600;}
 .minishop_item_list .item_box .info_box {padding-bottom:0}
 .item_list .detail_price {overflow:hidden; margin:14px 0px 0px;}
@@ -886,986 +893,976 @@ horiz
 	.item_list .detail_price .tit {background:none !important; padding-left:0}
 } */
 
-  /* 상품상세 */
-  #container_sub .view_basic .info .explain {
-    font-size: 12px;
-    line-height: 15px;
-  }
-  .view_area .detail_price {
-    overflow: hidden;
-    padding: 15px 0 20px;
-    border-top: 1px solid #ddd;
-    margin-top: 5px;
-  }
-  .view_area .detail_price .table {
-    display: table;
-    width: 100%;
-    margin-top: -1px;
-    table-layout: fixed;
-  }
-  .view_area .detail_price ul {
-    display: table-row;
-  }
-  .view_area .detail_price li {
-    list-style: none;
-    display: table-cell;
-    vertical-align: middle;
-    padding: 0 10px;
-    position: relative;
-  }
-  .view_area .detail_price .left_tit {
-    width: 95px;
-    text-align: center;
-    font-size: 13px;
-    color: #333;
-    letter-spacing: -0.5px;
-    line-height: 13px;
-    padding: 0;
-  }
+/* 상품상세 */
+#container_sub .view_basic .info .explain {
+  font-size: 12px;
+  line-height: 15px;
+}
+.view_area .detail_price {
+  overflow: hidden;
+  padding: 15px 0 20px;
+  border-top: 1px solid #ddd;
+  margin-top: 5px;
+}
+.view_area .detail_price .table {
+  display: table;
+  width: 100%;
+  margin-top: -1px;
+  table-layout: fixed;
+}
+.view_area .detail_price ul {
+  display: table-row;
+}
+.view_area .detail_price li {
+  list-style: none;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 10px;
+  position: relative;
+}
+.view_area .detail_price .left_tit {
+  width: 95px;
+  text-align: center;
+  font-size: 13px;
+  color: #333;
+  letter-spacing: -0.5px;
+  line-height: 13px;
+  padding: 0;
+}
+.view_area .detail_price .tit_box {
+  float: left;
+}
+.view_area .detail_price .tit {
+  font-size: 13px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  padding-left: 23px;
+  line-height: 18px;
+}
+.view_area .detail_price .man .tit {
+  color: #2d82be;
+  background: transparent url("http://www.saemip.com/m/images/ic_man.png") left
+    center no-repeat;
+  background-size: 16px;
+}
+.view_area .detail_price .woman .tit {
+  color: #e23354;
+  background: transparent url("http://www.saemip.com/m/images/ic_woman.png")
+    left center no-repeat;
+  background-size: 16px;
+}
+.view_area .detail_price .price_box {
+  text-align: center;
+  position: relative;
+}
+.view_area .detail_price .price_box:before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  width: 1px;
+  height: 19px;
+  background: #ccc;
+  margin-top: -8px;
+}
+.view_area .detail_price .price_box .info {
+  display: inline-block;
+}
+.view_area .detail_price .price_box strong {
+  float: left;
+  font-size: 17px;
+  font-weight: 600;
+}
+.view_area .detail_price .price_box .man strong {
+  color: #2d82be;
+}
+.view_area .detail_price .price_box .woman strong {
+  color: #e23354;
+}
+.view_area .detail_price .man .price_box strong {
+  color: #2d82be;
+}
+.view_area .detail_price .woman .price_box strong {
+  color: #e23354;
+}
+.view_area .detail_price .price_box em {
+  float: left;
+  color: #999;
+  font-size: 17px;
+}
+.view_area .detail_price .num {
+  text-align: center;
+}
+.view_area .detail_price .lineup {
+  display: inline-block;
+  position: relative;
+}
+.view_area .detail_price .man:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 1px;
+  height: 12px;
+  background: #ddd;
+  margin-top: -6px;
+}
+.view_area .detail_price .num_box {
+  display: block;
+  position: relative;
+  float: left;
+  font-size: 14px;
+  color: #999;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+/* .view_area .detail_price .num_box:before {content:""; position:absolute; left:-1px; top:50%; width:1px; height:19px; background:#ccc; margin-top:-8px} */
+.view_area .detail_price .num_box strong {
+  color: #000;
+  font-weight: 400;
+}
+.view_area .detail_price .attend li {
+  background: #f2f2f2;
+}
+
+/* horiz */
+@media screen and (max-width: 470px) {
   .view_area .detail_price .tit_box {
-    float: left;
+    float: none;
   }
-  .view_area .detail_price .tit {
-    font-size: 13px;
-    letter-spacing: -0.5px;
-    font-weight: 400;
-    padding-left: 23px;
-    line-height: 18px;
-  }
-  .view_area .detail_price .man .tit {
-    color: #2d82be;
-    background: transparent url("http://www.saemip.com/m/images/ic_man.png")
-      left center no-repeat;
-    background-size: 16px;
-  }
-  .view_area .detail_price .woman .tit {
-    color: #e23354;
-    background: transparent url("http://www.saemip.com/m/images/ic_woman.png")
-      left center no-repeat;
-    background-size: 16px;
-  }
-  .view_area .detail_price .price_box {
-    text-align: center;
-    position: relative;
-  }
-  .view_area .detail_price .price_box:before {
-    content: "";
-    position: absolute;
-    left: -1px;
-    top: 50%;
-    width: 1px;
-    height: 19px;
-    background: #ccc;
-    margin-top: -8px;
-  }
-  .view_area .detail_price .price_box .info {
-    display: inline-block;
-  }
-  .view_area .detail_price .price_box strong {
-    float: left;
-    font-size: 17px;
-    font-weight: 600;
-  }
-  .view_area .detail_price .price_box .man strong {
-    color: #2d82be;
-  }
-  .view_area .detail_price .price_box .woman strong {
-    color: #e23354;
-  }
-  .view_area .detail_price .man .price_box strong {
-    color: #2d82be;
-  }
-  .view_area .detail_price .woman .price_box strong {
-    color: #e23354;
-  }
-  .view_area .detail_price .price_box em {
-    float: left;
-    color: #999;
-    font-size: 17px;
-  }
-  .view_area .detail_price .num {
-    text-align: center;
-  }
-  .view_area .detail_price .lineup {
-    display: inline-block;
-    position: relative;
+  .view_area .detail_price .num_box {
+    float: none;
+    padding-left: 0;
+    margin-top: 3px;
   }
   .view_area .detail_price .man:before {
     content: "";
     position: absolute;
     right: 0;
-    top: 50%;
+    top: 0;
     width: 1px;
-    height: 12px;
+    height: 100%;
     background: #ddd;
-    margin-top: -6px;
+    margin-top: 0;
   }
+}
+
+@media screen and (max-width: 360px) {
   .view_area .detail_price .num_box {
-    display: block;
-    position: relative;
-    float: left;
-    font-size: 14px;
-    color: #999;
-    box-sizing: border-box;
-    padding-left: 10px;
+    font-size: 13px;
   }
-  /* .view_area .detail_price .num_box:before {content:""; position:absolute; left:-1px; top:50%; width:1px; height:19px; background:#ccc; margin-top:-8px} */
-  .view_area .detail_price .num_box strong {
-    color: #000;
-    font-weight: 400;
-  }
-  .view_area .detail_price .attend li {
-    background: #f2f2f2;
-  }
+}
 
-  /* horiz */
-  @media screen and (max-width: 470px) {
-    .view_area .detail_price .tit_box {
-      float: none;
-    }
-    .view_area .detail_price .num_box {
-      float: none;
-      padding-left: 0;
-      margin-top: 3px;
-    }
-    .view_area .detail_price .man:before {
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 1px;
-      height: 100%;
-      background: #ddd;
-      margin-top: 0;
-    }
-  }
+/* 2017-12-11 :: ARA :: 나이추가 */
+.minishop_item_list .item_box .info_box {
+  padding-right: 0px;
+}
+.minishop_item_list .item_box .info_box .add_txt {
+  position: relative;
+  margin: 0px;
+  padding: 3px 0;
+  padding-right: 75px;
+}
+.item_box .info_box .info_age {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #71ad2c;
+  color: #fff;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 5px;
+  font-size: 11px;
+}
 
-  @media screen and (max-width: 360px) {
-    .view_area .detail_price .num_box {
-      font-size: 13px;
-    }
-  }
+/* 2018-02-20 썸네일형 게시판 추가 SHJ */
 
-  /* 2017-12-11 :: ARA :: 나이추가 */
-  .minishop_item_list .item_box .info_box {
-    padding-right: 0px;
-  }
-  .minishop_item_list .item_box .info_box .add_txt {
-    position: relative;
-    margin: 0px;
-    padding: 3px 0;
-    padding-right: 75px;
-  }
-  .item_box .info_box .info_age {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: #71ad2c;
-    color: #fff;
-    height: 18px;
-    line-height: 18px;
-    padding: 0 5px;
-    font-size: 11px;
-  }
+/* ●●●●●●●●●● 목록 썸네일이벤트 */
+.thumb {
+  background: #f4f4f4
+    url("http://www.saemip.com/m/images/cm_images/board_thumb_none.png") center
+    center no-repeat;
+  background-size: 25px;
+}
+.thumb .real_img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.thumb .fake_img {
+  overflow: hidden;
+}
+.thumb .fake_img img {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
 
-  /* 2018-02-20 썸네일형 게시판 추가 SHJ */
+.cm_board_event_thumb ul {
+  overflow: hidden;
+}
+.cm_board_event_thumb li {
+  list-style: none;
+}
+.cm_board_event_thumb .cm_no_conts .no_icon {
+  background-image: url("http://www.saemip.com/m/images/cm_images/no_conts_board_event.png");
+}
 
-  /* ●●●●●●●●●● 목록 썸네일이벤트 */
-  .thumb {
-    background: #f4f4f4
-      url("http://www.saemip.com/m/images/cm_images/board_thumb_none.png")
-      center center no-repeat;
-    background-size: 25px;
-  }
-  .thumb .real_img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .thumb .fake_img {
-    overflow: hidden;
-  }
-  .thumb .fake_img img {
-    width: 100%;
-    height: 100%;
-    float: left;
-  }
+.cm_board_event_thumb .notice_box {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.cm_board_event_thumb .notice_box li {
+  border-bottom: 1px solid #dadada;
+  overflow: hidden;
+  padding-left: 36px;
+  padding-right: 80px;
+  position: relative;
+}
+.cm_board_event_thumb .notice_box li {
+  background: #fbfbfb
+    url("http://www.saemip.com/m/images/cm_images/board_notice_bullet.png") 12px
+    center no-repeat;
+  background-size: 16px;
+}
+.cm_board_event_thumb .notice_box .posting {
+  display: inline-block;
+  max-width: 100%;
+  float: left;
+  box-sizing: border-box;
+  height: 35px;
+}
+.cm_board_event_thumb .notice_box .posting .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal !important;
+  display: block;
+}
+.cm_board_event_thumb .notice_box .posting .title {
+  color: #333;
+  font-size: 13px;
+  letter-spacing: -0.5px;
+  line-height: 36px;
+}
+.cm_board_event_thumb .notice_box .posting .title strong {
+  color: #e4343f;
+  margin-right: 5px;
+  font-weight: 400;
+}
+.cm_board_event_thumb .notice_box .posting .new {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background: #cb3726;
+  float: right;
+  margin: 11px 0 0 4px;
+  position: relative;
+  text-align: center;
+  border-radius: 100px;
+}
+.cm_board_event_thumb .notice_box .posting .new:before {
+  content: "N";
+  font-family: "lato";
+  color: #fff;
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 13px;
+  display: block;
+}
+.cm_board_event_thumb .notice_box .posting .from {
+  color: #888;
+  letter-spacing: 0px;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  height: 20px;
+  line-height: 20px;
+}
+.cm_board_event_thumb .notice_box .posting .from {
+  font-size: 11px;
+}
 
-  .cm_board_event_thumb {
-    /* border-top:2px solid #333; */
-  }
-  .cm_board_event_thumb ul {
-    overflow: hidden;
-  }
-  .cm_board_event_thumb li {
-    list-style: none;
-  }
-  .cm_board_event_thumb .cm_no_conts .no_icon {
-    background-image: url("http://www.saemip.com/m/images/cm_images/no_conts_board_event.png");
-  }
+.cm_board_event_thumb .list_box {
+  overflow: hidden;
+  margin-top: -10px;
+}
+.cm_board_event_thumb .list_box ul {
+  margin-left: -10px;
+  overflow: hidden;
+  position: relative;
+}
+.cm_board_event_thumb .list_box li {
+  float: left;
+  padding: 15px 0px;
+  position: relative;
+}
+.cm_board_event_thumb .list_box li:before {
+  content: "";
+  background: #ddd;
+  width: 1000%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: -1px;
+}
 
-  .cm_board_event_thumb .notice_box {
-    overflow: hidden;
-    margin-bottom: 10px;
-  }
-  .cm_board_event_thumb .notice_box li {
-    border-bottom: 1px solid #dadada;
-    overflow: hidden;
-    padding-left: 36px;
-    padding-right: 80px;
-    position: relative;
-  }
-  .cm_board_event_thumb .notice_box li {
-    background: #fbfbfb
-      url("http://www.saemip.com/m/images/cm_images/board_notice_bullet.png")
-      12px center no-repeat;
-    background-size: 16px;
-  }
-  .cm_board_event_thumb .notice_box .posting {
-    display: inline-block;
-    max-width: 100%;
-    float: left;
-    box-sizing: border-box;
-    height: 35px;
-  }
-  .cm_board_event_thumb .notice_box .posting .title {
+.cm_board_event_thumb .list_box .posting {
+  box-sizing: border-box;
+  position: relative;
+  margin-left: 10px;
+}
+.cm_board_event_thumb .list_box .posting .conts {
+  color: #999;
+  box-sizing: border-box;
+  line-height: 16px;
+  padding-right: 10px;
+  clear: both;
+}
+.cm_board_event_thumb .list_box .posting .conts {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+.cm_board_event_thumb .list_box .posting .thumb {
+  overflow: hidden;
+  margin-bottom: 10px;
+  position: relative;
+  display: block;
+}
+.cm_board_event_thumb .list_box .posting .thumb img {
+  width: 100%;
+}
+.cm_board_event_thumb .list_box .posting .from {
+  margin-top: 10px;
+  background: transparent
+    url("http://www.saemip.com/m/images/cm_images/ic_date.png") left center
+    no-repeat;
+  padding-left: 18px;
+  background-size: 11px;
+}
+.cm_board_event_thumb .list_box .posting .from {
+  color: #999;
+  font-size: 11px;
+  letter-spacing: -0.5px;
+}
+.cm_board_event_thumb .list_box .posting .state {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 5;
+}
+.cm_board_event_thumb .list_box .posting .title_wrap {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+.cm_board_event_thumb .list_box .posting .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+.cm_board_event_thumb .list_box .posting .title {
+  color: #333;
+  font-size: 13px;
+  letter-spacing: -0.5px;
+  line-height: 16px;
+  height: 32px;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+.cm_board_event_thumb .list_box .posting .title strong {
+  color: #e4343f;
+  margin-right: 5px;
+  font-weight: 400;
+}
+.cm_board_event_thumb .list_box .posting .new {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background: #cb3726;
+  float: right;
+  margin: 0px 0 0 4px;
+  position: relative;
+  text-align: center;
+  border-radius: 100px;
+  display: none;
+}
+.cm_board_event_thumb .list_box .posting .new:before {
+  content: "N";
+  font-family: "lato";
+  color: #fff;
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 13px;
+  display: block;
+}
+
+.cm_board_event_thumb li:hover .title {
+  text-decoration: underline;
+}
+
+.cm_board_event_thumb .list_box {
+  margin: 0 10px;
+}
+.cm_board_event_thumb .list_box li {
+  width: 50%;
+}
+.cm_board_event_thumb .list_box li:nth-of-type(2n) + li {
+  clear: both;
+}
+
+/* horiz */
+@media screen and (min-width: 360px) {
+  .cm_board_event_thumb .list_box .posting .title {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     word-wrap: normal !important;
     display: block;
+    height: 16px;
   }
-  .cm_board_event_thumb .notice_box .posting .title {
-    color: #333;
-    font-size: 13px;
-    letter-spacing: -0.5px;
-    line-height: 36px;
-  }
-  .cm_board_event_thumb .notice_box .posting .title strong {
-    color: #e4343f;
-    margin-right: 5px;
-    font-weight: 400;
-  }
-  .cm_board_event_thumb .notice_box .posting .new {
-    width: 14px;
-    height: 14px;
-    display: inline-block;
-    background: #cb3726;
-    float: right;
-    margin: 11px 0 0 4px;
-    position: relative;
-    text-align: center;
-    border-radius: 100px;
-  }
-  .cm_board_event_thumb .notice_box .posting .new:before {
-    content: "N";
-    font-family: "lato";
-    color: #fff;
-    font-size: 9px;
-    font-weight: 600;
-    line-height: 13px;
-    display: block;
-  }
-  .cm_board_event_thumb .notice_box .posting .from {
-    color: #888;
-    letter-spacing: 0px;
-    position: absolute;
-    right: 10px;
-    top: 8px;
-    height: 20px;
-    line-height: 20px;
-  }
-  .cm_board_event_thumb .notice_box .posting .from {
-    /* font-family:"roboto"; */
-    font-size: 11px;
-  }
+}
 
-  .cm_board_event_thumb .list_box {
-    overflow: hidden;
-    margin-top: -10px;
-  }
-  .cm_board_event_thumb .list_box ul {
-    margin-left: -10px;
-    overflow: hidden;
-    position: relative;
-  }
+/* horiz */
+@media screen and (min-width: 650px) {
   .cm_board_event_thumb .list_box li {
-    float: left;
-    padding: 15px 0px;
-    position: relative;
-  }
-  .cm_board_event_thumb .list_box li:before {
-    content: "";
-    background: #ddd;
-    width: 1000%;
-    height: 1px;
-    position: absolute;
-    left: 0;
-    top: -1px;
-  }
-
-  .cm_board_event_thumb .list_box .posting {
-    box-sizing: border-box;
-    position: relative;
-    margin-left: 10px;
-  }
-  .cm_board_event_thumb .list_box .posting .conts {
-    color: #999;
-    box-sizing: border-box;
-    line-height: 16px;
-    padding-right: 10px;
-    clear: both;
-  }
-  .cm_board_event_thumb .list_box .posting .conts {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-  }
-  .cm_board_event_thumb .list_box .posting .thumb {
-    overflow: hidden;
-    margin-bottom: 10px;
-    position: relative;
-    display: block;
-  }
-  .cm_board_event_thumb .list_box .posting .thumb img {
-    width: 100%;
-  }
-  .cm_board_event_thumb .list_box .posting .from {
-    margin-top: 10px;
-    background: transparent
-      url("http://www.saemip.com/m/images/cm_images/ic_date.png") left center
-      no-repeat;
-    padding-left: 18px;
-    background-size: 11px;
-  }
-  .cm_board_event_thumb .list_box .posting .from {
-    color: #999; /* font-family:"roboto"; */
-    font-size: 11px;
-    letter-spacing: -0.5px;
-  }
-  .cm_board_event_thumb .list_box .posting .state {
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    z-index: 5;
-  }
-  .cm_board_event_thumb .list_box .posting .title_wrap {
-    display: block;
-    box-sizing: border-box;
-    margin-bottom: 8px;
-  }
-  .cm_board_event_thumb .list_box .posting .title {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-  }
-  .cm_board_event_thumb .list_box .posting .title {
-    color: #333;
-    font-size: 13px;
-    letter-spacing: -0.5px;
-    line-height: 16px;
-    height: 32px;
-    word-wrap: break-word;
-    word-break: keep-all;
-  }
-  .cm_board_event_thumb .list_box .posting .title strong {
-    color: #e4343f;
-    margin-right: 5px;
-    font-weight: 400;
-  }
-  .cm_board_event_thumb .list_box .posting .new {
-    width: 14px;
-    height: 14px;
-    display: inline-block;
-    background: #cb3726;
-    float: right;
-    margin: 0px 0 0 4px;
-    position: relative;
-    text-align: center;
-    border-radius: 100px;
-    display: none;
-  }
-  .cm_board_event_thumb .list_box .posting .new:before {
-    content: "N";
-    font-family: "lato";
-    color: #fff;
-    font-size: 9px;
-    font-weight: 600;
-    line-height: 13px;
-    display: block;
-  }
-
-  .cm_board_event_thumb li:hover .title {
-    text-decoration: underline;
-  }
-
-  .cm_board_event_thumb .list_box {
-    margin: 0 10px;
-  }
-  .cm_board_event_thumb .list_box li {
-    width: 50%;
-  }
-  .cm_board_event_thumb .list_box li:nth-of-type(2n) + li {
-    clear: both;
-  }
-
-  /* horiz */
-  @media screen and (min-width: 360px) {
-    .cm_board_event_thumb .list_box .posting .title {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      word-wrap: normal !important;
-      display: block;
-      height: 16px;
-    }
-  }
-
-  /* horiz */
-  @media screen and (min-width: 650px) {
-    .cm_board_event_thumb .list_box li {
-      width: 33.33333%;
-    }
-    .cm_board_event_thumb .list_box li:nth-of-type(2n) + li {
-      clear: none;
-    }
-  }
-
-  /* ●●●●●●●●●● 목록 뉴스형 */
-  .cm_board_news {
-    /* border-top:2px solid #333; */
-  }
-  .cm_board_news ul {
-    overflow: hidden;
-  }
-  .cm_board_news li {
-    list-style: none;
-  }
-  .cm_board_news .cm_no_conts .no_icon {
-    background-image: url("http://www.saemip.com/m/images/cm_images/no_conts_board_news.png");
-  }
-
-  .cm_board_news .notice_box {
-    overflow: hidden;
-    margin-bottom: 10px;
-  }
-  .cm_board_news .notice_box li {
-    border-bottom: 1px solid #dadada;
-    overflow: hidden;
-    padding-left: 36px;
-    padding-right: 80px;
-    position: relative;
-  }
-  .cm_board_news .notice_box li {
-    background: #fbfbfb
-      url("http://www.saemip.com/m/images/cm_images/board_notice_bullet.png")
-      12px center no-repeat;
-    background-size: 16px;
-  }
-  .cm_board_news .notice_box .posting {
-    display: inline-block;
-    max-width: 100%;
-    float: left;
-    box-sizing: border-box;
-    height: 35px;
-  }
-  .cm_board_news .notice_box .posting .title {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    word-wrap: normal !important;
-    display: block;
-  }
-  .cm_board_news .notice_box .posting .title {
-    color: #333;
-    font-size: 13px;
-    letter-spacing: -0.5px;
-    line-height: 36px;
-  }
-  .cm_board_news .notice_box .posting .title strong {
-    color: #e4343f;
-    margin-right: 5px;
-    font-weight: 400;
-  }
-  .cm_board_news .notice_box .posting .new {
-    width: 14px;
-    height: 14px;
-    display: inline-block;
-    background: #cb3726;
-    float: right;
-    margin: 11px 0 0 4px;
-    position: relative;
-    text-align: center;
-    border-radius: 100px;
-  }
-  .cm_board_news .notice_box .posting .new:before {
-    content: "N";
-    font-family: "lato";
-    color: #fff;
-    font-size: 9px;
-    font-weight: 600;
-    line-height: 13px;
-    display: block;
-  }
-  .cm_board_news .notice_box .posting .from {
-    color: #888;
-    letter-spacing: 0px;
-    position: absolute;
-    right: 10px;
-    top: 8px;
-    height: 20px;
-    line-height: 20px;
-  }
-  .cm_board_news .notice_box .posting .from {
-    font-size: 11px;
-  }
-
-  .cm_board_news .list_box li {
-    min-height: 95px;
-    border-bottom: 1px solid #dadada;
-    position: relative;
-    cursor: default;
-    padding: 10px 10px 10px 130px;
-    overflow: hidden;
-  }
-  .cm_board_news .list_box li:last-child {
-    border-bottom: 0;
-  }
-  .cm_board_news .list_box .posting {
-    overflow: hidden;
-    box-sizing: border-box;
-  }
-  .cm_board_news .list_box .posting .title_wrap {
-    display: block;
-    box-sizing: border-box;
-    margin-bottom: 5px;
-  }
-  .cm_board_news .list_box .posting .title {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-    word-wrap: break-word;
-    word-break: keep-all;
-  }
-  .cm_board_news .list_box .posting .title {
-    color: #333;
-    font-size: 13px;
-    letter-spacing: -0.5px;
-    line-height: 16px;
-  }
-  .cm_board_news .list_box .posting .title strong {
-    color: #e4343f;
-    margin-right: 5px;
-    font-weight: 400;
-  }
-  .cm_board_news .list_box .posting .new {
-    width: 14px;
-    height: 14px;
-    display: inline-block;
-    background: #cb3726;
-    float: right;
-    margin: 0px 0 0 4px;
-    position: relative;
-    text-align: center;
-    border-radius: 100px;
-    display: none;
-  }
-  .cm_board_news .list_box .posting .new:before {
-    content: "N";
-    font-family: "lato";
-    color: #fff;
-    font-size: 9px;
-    font-weight: 600;
-    line-height: 13px;
-    display: block;
-  }
-
-  .cm_board_news .list_box .posting .thumb {
-    overflow: hidden;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    width: 110px;
-    height: 73px;
-  }
-  .cm_board_news .list_box .posting .thumb img {
-    width: 100%;
-  }
-  .cm_board_news .list_box .posting .conts {
-    color: #999;
-    box-sizing: border-box;
-    line-height: 13px;
-    padding-right: 10px;
-    clear: both;
-    font-size: 11px;
-    word-wrap: break-word;
-    word-break: keep-all;
-  }
-  .cm_board_news .list_box .posting .conts {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-  }
-  .cm_board_news .list_box .posting .from {
-    letter-spacing: 0px;
-    position: absolute;
-    left: 0px;
-    bottom: 10px;
-    line-height: 20px;
-    width: 100%;
-    padding: 0 10px;
-    box-sizing: border-box;
-  }
-  .cm_board_news .list_box .posting .from strong {
-    color: #999;
-    font-size: 11px;
-    letter-spacing: -1px;
-    font-weight: 400;
-    white-space: nowrap;
-    float: left;
-    line-height: 15px;
-  }
-  .cm_board_news .list_box .posting .from em {
-    color: #71ad2c;
-    letter-spacing: -0.5px;
-    font-size: 12px;
-    position: relative;
-    white-space: nowrap;
-    float: left;
-    font-weight: 400;
-    line-height: 15px;
-  }
-  .cm_board_news .list_box .posting .from em {
-    background: transparent
-      url("http://www.saemip.com/m/images/cm_images/ic_date.png") left center
-      no-repeat;
-    padding-left: 18px;
-    background-size: 11px;
-  }
-  .cm_board_news .list_box .posting .right {
-    float: right;
-  }
-  .cm_board_news .list_box .posting .hits {
-    position: relative;
-    padding-left: 31px;
-    margin-left: 10px;
-    float: left;
-    line-height: 15px;
-    color: #bbb;
-    font-size: 12px;
-    letter-spacing: -0.5px;
-    font-weight: 400;
-  }
-  .cm_board_news .list_box .posting .hits {
-    background: transparent
-      url("http://www.saemip.com/m/images/cm_images/board_view.png") 10px center
-      no-repeat;
-    background-size: 18px;
-  }
-  .cm_board_news .list_box .posting .from .hits:before {
-    content: "";
-    width: 1px;
-    height: 10px;
-    background: #ddd;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    margin-top: -5px;
-  }
-  .cm_board_news .list_box .posting .state {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-  }
-
-  .cm_board_news.if_learning .list_box li {
-    min-height: 165px;
-    padding-left: 170px;
-    padding-top: 25px;
-  }
-  .cm_board_news.if_learning .list_box .mark_box {
-    position: absolute;
-    right: 10px;
-    bottom: 20px;
-  }
-  .cm_board_news.if_learning .list_box .mark_box .mark {
-    float: left;
-  }
-  .cm_board_news.if_learning .list_box .mark_box .num_sum {
-    float: left;
-    color: #e9345b;
-    font-size: 14px;
-    height: 14px;
-    line-height: 15px;
-    margin-left: 5px;
-    font-weight: 600;
-  }
-  .cm_board_news.if_learning .list_box .conts {
-    height: 51px;
-    font-size: 13px;
-  }
-  .cm_board_news.if_learning .list_box .posting .thumb {
-    left: 15px;
-  }
-  .cm_board_news.if_learning .list_box .from {
-    left: 170px;
-  }
-  .cm_board_news.if_learning .list_box .from strong {
-    font-size: 15px;
-  }
-
-  /* 2018-06-14 :: 찜하기 추가 :: ARA */
-  .item_box.if_add_wish .item_title {
-    padding-right: 45px;
-  }
-  .item_box .wish {
-    height: 30px;
-    width: 30px;
-    border-radius: 100px;
-    position: absolute;
-    right: 10px;
-    top: 35px;
-    z-index: 50;
-  }
-  .item_box .wish .ic_wish {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 28px;
-    height: 28px;
-    overflow: hidden;
-  }
-  .item_box .wish .ic_wish {
-    border-radius: 100px;
-    background: transparent
-      url("http://www.saemip.com/m/images/ic_wish_off.png") center center
-      no-repeat;
-    background-size: 15px !important;
-  }
-  .item_box .wish .ic_wish.on {
-    border-color: #71ad2c;
-    background: transparent
-      url("http://www.saemip.com/m/images/ic_wish_hit.png") center center
-      no-repeat;
-  }
-
-  /* ********************************************** *
- * 2018-06-29 공유하기, 찜하기 추가 SHJ
- * ********************************************** */
-  .top_header .sns_box {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 10;
-  }
-  .top_header .sns_box .inner {
-    overflow: hidden;
-    height: 60px;
-    background: #71ad2c;
-  }
-  .top_header .sns_box .inner ul {
-    padding-right: 5px;
-  }
-  .top_header .sns_box .inner li {
-    list-style: none;
-    float: left;
-  }
-  .top_header .sns_box .inner .btn {
-    width: 25px;
-    height: 60px;
-    display: block;
-    padding: 0 7px;
-  }
-  .top_header .sns_box .inner .share {
-    background: transparent url("http://www.saemip.com/m/images/share_ic.png")
-      center center no-repeat;
-    background-size: 23px;
-  }
-  .top_header .sns_box .inner .wish {
-    background: transparent url("http://www.saemip.com/m/images/share_wish.png")
-      center center no-repeat;
-    background-size: 23px;
-  }
-  .top_header .sns_box .inner .hit .wish {
-    background: transparent
-      url("http://www.saemip.com/m/images/share_wish_hit.png") center center
-      no-repeat;
-    background-size: 23px;
-  }
-
-  .top_header .share_box {
-    position: fixed;
-    top: 0;
-    box-sizing: border-box;
-    overflow: hidden;
-    height: 100%;
-    z-index: 1000000;
-    width: 100%;
-    left: -100%;
-  }
-  .top_header .share_box {
-    transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-  }
-  .top_header .share_box .in_box {
-    background: #fff;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 100;
-    width: 330px;
-    margin: -117px 0 0 -165px;
-  }
-  .top_header .share_box .tit {
-    display: block;
-    background: #fff;
-    border-bottom: 1px solid #d5d5d5;
-    text-align: center;
-    color: #000;
-    padding: 15px;
-    font-size: 17px;
-    letter-spacing: -0.5px;
-  }
-  .top_header .share_box .sns {
-    overflow: hidden;
-    padding: 20px 15px;
-  }
-  .top_header .share_box .sns li {
-    list-style: none;
-    float: left;
     width: 33.33333%;
   }
-  .top_header .share_box .sns .btn {
-    text-align: center;
-    display: block;
-    padding: 75px 0 10px;
+  .cm_board_event_thumb .list_box li:nth-of-type(2n) + li {
+    clear: none;
   }
-  .top_header .share_box .sns .btn.face {
-    background: transparent url("http://www.saemip.com/m/images/share_face.png")
-      center 10px no-repeat;
-    background-size: 55px;
-  }
-  .top_header .share_box .sns .btn.story {
-    background: transparent
-      url("http://www.saemip.com/m/images/share_story.png") center 10px
-      no-repeat;
-    background-size: 55px;
-  }
-  .top_header .share_box .sns .btn.talk {
-    background: transparent url("http://www.saemip.com/m/images/share_talk.png")
-      center 10px no-repeat;
-    background-size: 55px;
-  }
-  .top_header .share_box .sns .txt {
-    display: block;
-    color: #666;
-    letter-spacing: -0.5px;
-  }
-  .top_header .share_box .close {
-  }
-  .top_header .share_box .close_btn {
-    display: block;
-    background: #e9e9e9;
-    text-align: center;
-    color: #000;
-    padding: 15px;
-    font-size: 15px;
-    letter-spacing: -0.5px;
-  }
+}
 
-  .top_header .set_cover_btn {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 100%;
-    background: #000;
-    z-index: 99;
-  }
-  .top_header .set_cover_btn {
-    opacity: 0;
-    filter: alpha(opacity=0);
-    -ms-filter: alpha(opacity=0);
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-  }
+/* ●●●●●●●●●● 목록 뉴스형 */
+.cm_board_news ul {
+  overflow: hidden;
+}
+.cm_board_news li {
+  list-style: none;
+}
+.cm_board_news .cm_no_conts .no_icon {
+  background-image: url("http://www.saemip.com/m/images/cm_images/no_conts_board_news.png");
+}
 
-  /* 조건 : 설정열렸을때 */
-  .top_header .sns_box.if_open .share_box {
-    left: 0;
-  }
-  .top_header .sns_box.if_open .set_cover_btn {
-    width: 100%;
-    opacity: 0.7;
-    filter: alpha(opacity=70);
-    -ms-filter: alpha(opacity=70);
-  }
+.cm_board_news .notice_box {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.cm_board_news .notice_box li {
+  border-bottom: 1px solid #dadada;
+  overflow: hidden;
+  padding-left: 36px;
+  padding-right: 80px;
+  position: relative;
+}
+.cm_board_news .notice_box li {
+  background: #fbfbfb
+    url("http://www.saemip.com/m/images/cm_images/board_notice_bullet.png") 12px
+    center no-repeat;
+  background-size: 16px;
+}
+.cm_board_news .notice_box .posting {
+  display: inline-block;
+  max-width: 100%;
+  float: left;
+  box-sizing: border-box;
+  height: 35px;
+}
+.cm_board_news .notice_box .posting .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal !important;
+  display: block;
+}
+.cm_board_news .notice_box .posting .title {
+  color: #333;
+  font-size: 13px;
+  letter-spacing: -0.5px;
+  line-height: 36px;
+}
+.cm_board_news .notice_box .posting .title strong {
+  color: #e4343f;
+  margin-right: 5px;
+  font-weight: 400;
+}
+.cm_board_news .notice_box .posting .new {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background: #cb3726;
+  float: right;
+  margin: 11px 0 0 4px;
+  position: relative;
+  text-align: center;
+  border-radius: 100px;
+}
+.cm_board_news .notice_box .posting .new:before {
+  content: "N";
+  font-family: "lato";
+  color: #fff;
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 13px;
+  display: block;
+}
+.cm_board_news .notice_box .posting .from {
+  color: #888;
+  letter-spacing: 0px;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  height: 20px;
+  line-height: 20px;
+}
+.cm_board_news .notice_box .posting .from {
+  font-size: 11px;
+}
 
-  /* horiz */
-  @media screen and (max-width: 340px) {
-    .top_header .logo img {
-      height: 26px;
-      margin-top: 14px;
-    }
-    .top_header .share_box .in_box {
-      width: 300px;
-      margin-left: -150px;
-    }
-  }
+.cm_board_news .list_box li {
+  min-height: 95px;
+  border-bottom: 1px solid #dadada;
+  position: relative;
+  cursor: default;
+  padding: 10px 10px 10px 130px;
+  overflow: hidden;
+}
+.cm_board_news .list_box li:last-child {
+  border-bottom: 0;
+}
+.cm_board_news .list_box .posting {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.cm_board_news .list_box .posting .title_wrap {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+.cm_board_news .list_box .posting .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+.cm_board_news .list_box .posting .title {
+  color: #333;
+  font-size: 13px;
+  letter-spacing: -0.5px;
+  line-height: 16px;
+}
+.cm_board_news .list_box .posting .title strong {
+  color: #e4343f;
+  margin-right: 5px;
+  font-weight: 400;
+}
+.cm_board_news .list_box .posting .new {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background: #cb3726;
+  float: right;
+  margin: 0px 0 0 4px;
+  position: relative;
+  text-align: center;
+  border-radius: 100px;
+  display: none;
+}
+.cm_board_news .list_box .posting .new:before {
+  content: "N";
+  font-family: "lato";
+  color: #fff;
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 13px;
+  display: block;
+}
 
-  /* *****************************************************************************
+.cm_board_news .list_box .posting .thumb {
+  overflow: hidden;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 110px;
+  height: 73px;
+}
+.cm_board_news .list_box .posting .thumb img {
+  width: 100%;
+}
+.cm_board_news .list_box .posting .conts {
+  color: #999;
+  box-sizing: border-box;
+  line-height: 13px;
+  padding-right: 10px;
+  clear: both;
+  font-size: 11px;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+.cm_board_news .list_box .posting .conts {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+.cm_board_news .list_box .posting .from {
+  letter-spacing: 0px;
+  position: absolute;
+  left: 0px;
+  bottom: 10px;
+  line-height: 20px;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.cm_board_news .list_box .posting .from strong {
+  color: #999;
+  font-size: 11px;
+  letter-spacing: -1px;
+  font-weight: 400;
+  white-space: nowrap;
+  float: left;
+  line-height: 15px;
+}
+.cm_board_news .list_box .posting .from em {
+  color: #71ad2c;
+  letter-spacing: -0.5px;
+  font-size: 12px;
+  position: relative;
+  white-space: nowrap;
+  float: left;
+  font-weight: 400;
+  line-height: 15px;
+}
+.cm_board_news .list_box .posting .from em {
+  background: transparent
+    url("http://www.saemip.com/m/images/cm_images/ic_date.png") left center
+    no-repeat;
+  padding-left: 18px;
+  background-size: 11px;
+}
+.cm_board_news .list_box .posting .right {
+  float: right;
+}
+.cm_board_news .list_box .posting .hits {
+  position: relative;
+  padding-left: 31px;
+  margin-left: 10px;
+  float: left;
+  line-height: 15px;
+  color: #bbb;
+  font-size: 12px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+}
+.cm_board_news .list_box .posting .hits {
+  background: transparent
+    url("http://www.saemip.com/m/images/cm_images/board_view.png") 10px center
+    no-repeat;
+  background-size: 18px;
+}
+.cm_board_news .list_box .posting .from .hits:before {
+  content: "";
+  width: 1px;
+  height: 10px;
+  background: #ddd;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -5px;
+}
+.cm_board_news .list_box .posting .state {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.cm_board_news.if_learning .list_box li {
+  min-height: 165px;
+  padding-left: 170px;
+  padding-top: 25px;
+}
+.cm_board_news.if_learning .list_box .mark_box {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+}
+.cm_board_news.if_learning .list_box .mark_box .mark {
+  float: left;
+}
+.cm_board_news.if_learning .list_box .mark_box .num_sum {
+  float: left;
+  color: #e9345b;
+  font-size: 14px;
+  height: 14px;
+  line-height: 15px;
+  margin-left: 5px;
+  font-weight: 600;
+}
+.cm_board_news.if_learning .list_box .conts {
+  height: 51px;
+  font-size: 13px;
+}
+.cm_board_news.if_learning .list_box .posting .thumb {
+  left: 15px;
+}
+.cm_board_news.if_learning .list_box .from {
+  left: 170px;
+}
+.cm_board_news.if_learning .list_box .from strong {
+  font-size: 15px;
+}
+
+/* 2018-06-14 :: 찜하기 추가 :: ARA */
+.item_box.if_add_wish .item_title {
+  padding-right: 45px;
+}
+.item_box .wish {
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  position: absolute;
+  right: 10px;
+  top: 35px;
+  z-index: 50;
+}
+.item_box .wish .ic_wish {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 28px;
+  height: 28px;
+  overflow: hidden;
+}
+.item_box .wish .ic_wish {
+  border-radius: 100px;
+  background: transparent url("http://www.saemip.com/m/images/ic_wish_off.png")
+    center center no-repeat;
+  background-size: 15px !important;
+}
+.item_box .wish .ic_wish.on {
+  border-color: #71ad2c;
+  background: transparent url("http://www.saemip.com/m/images/ic_wish_hit.png")
+    center center no-repeat;
+}
+
+/* ********************************************** *
+* 2018-06-29 공유하기, 찜하기 추가 SHJ
+* ********************************************** */
+.top_header .sns_box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+.top_header .sns_box .inner {
+  overflow: hidden;
+  height: 60px;
+  background: #71ad2c;
+}
+.top_header .sns_box .inner ul {
+  padding-right: 5px;
+}
+.top_header .sns_box .inner li {
+  list-style: none;
+  float: left;
+}
+.top_header .sns_box .inner .btn {
+  width: 25px;
+  height: 60px;
+  display: block;
+  padding: 0 7px;
+}
+.top_header .sns_box .inner .share {
+  background: transparent url("http://www.saemip.com/m/images/share_ic.png")
+    center center no-repeat;
+  background-size: 23px;
+}
+.top_header .sns_box .inner .wish {
+  background: transparent url("http://www.saemip.com/m/images/share_wish.png")
+    center center no-repeat;
+  background-size: 23px;
+}
+.top_header .sns_box .inner .hit .wish {
+  background: transparent
+    url("http://www.saemip.com/m/images/share_wish_hit.png") center center
+    no-repeat;
+  background-size: 23px;
+}
+
+.top_header .share_box {
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100%;
+  z-index: 1000000;
+  width: 100%;
+  left: -100%;
+}
+.top_header .share_box {
+  transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+}
+.top_header .share_box .in_box {
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+  width: 330px;
+  margin: -117px 0 0 -165px;
+}
+.top_header .share_box .tit {
+  display: block;
+  background: #fff;
+  border-bottom: 1px solid #d5d5d5;
+  text-align: center;
+  color: #000;
+  padding: 15px;
+  font-size: 17px;
+  letter-spacing: -0.5px;
+}
+.top_header .share_box .sns {
+  overflow: hidden;
+  padding: 20px 15px;
+}
+.top_header .share_box .sns li {
+  list-style: none;
+  float: left;
+  width: 33.33333%;
+}
+.top_header .share_box .sns .btn {
+  text-align: center;
+  display: block;
+  padding: 75px 0 10px;
+}
+.top_header .share_box .sns .btn.face {
+  background: transparent url("http://www.saemip.com/m/images/share_face.png")
+    center 10px no-repeat;
+  background-size: 55px;
+}
+.top_header .share_box .sns .btn.story {
+  background: transparent url("http://www.saemip.com/m/images/share_story.png")
+    center 10px no-repeat;
+  background-size: 55px;
+}
+.top_header .share_box .sns .btn.talk {
+  background: transparent url("http://www.saemip.com/m/images/share_talk.png")
+    center 10px no-repeat;
+  background-size: 55px;
+}
+.top_header .share_box .sns .txt {
+  display: block;
+  color: #666;
+  letter-spacing: -0.5px;
+}
+.top_header .share_box .close {
+}
+.top_header .share_box .close_btn {
+  display: block;
+  background: #e9e9e9;
+  text-align: center;
+  color: #000;
+  padding: 15px;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+}
+
+.top_header .set_cover_btn {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #000;
+  z-index: 99;
+}
+.top_header .set_cover_btn {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: alpha(opacity=0);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+/* 조건 : 설정열렸을때 */
+.top_header .sns_box.if_open .share_box {
+  left: 0;
+}
+.top_header .sns_box.if_open .set_cover_btn {
+  width: 100%;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: alpha(opacity=70);
+}
+
+/* horiz */
+@media screen and (max-width: 340px) {
+  .top_header .logo img {
+    height: 26px;
+    margin-top: 14px;
+  }
+  .top_header .share_box .in_box {
+    width: 300px;
+    margin-left: -150px;
+  }
+}
+
+/* *****************************************************************************
 
 2014-11-05 추가
 
 ***************************************************************************** */
 
-  /* 인풋폼 기본 */
-  input[type="text"],
-  input[type="password"],
-  input[type="number"],
-  input[type="email"],
-  input[type="tel"],
-  input[type="date"],
-  input[type="file"],
-  input[type="search"],
-  input[type="submit"],
-  button {
-    -webkit-appearance: none;
-    -webkit-gradient: none;
-    -webkit-border-radius: 0;
-    border: none;
-    color: #999;
-  }
-  input[type="number"]::-webkit-outer-spin-button,
-  input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
+/* 인풋폼 기본 */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+input[type="search"],
+input[type="submit"],
+button {
+  -webkit-appearance: none;
+  -webkit-gradient: none;
+  -webkit-border-radius: 0;
+  border: none;
+  color: #999;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  input[type="tel"],
-  input[type="number"] {
-    color: #333;
-    font-size: 13px;
-    padding: 11px 10px !important;
-    box-sizing: border-box;
-  }
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"] {
+  color: #333;
+  font-size: 13px;
+  padding: 11px 10px !important;
+  box-sizing: border-box;
+}
 
-  /* input[type=text] {border:1px solid #d4d4d4; background:#fff; height:40px; line-height:100%; color:#333; font-size:15px; padding:0 10px; box-sizing:border-box;}
+/* input[type=text] {border:1px solid #d4d4d4; background:#fff; height:40px; line-height:100%; color:#333; font-size:15px; padding:0 10px; box-sizing:border-box;}
 input[type=password] {border:1px solid #d4d4d4; background:#fff; height:40px; line-height:100%; color:#333; font-size:15px; padding:0 10px; box-sizing:border-box;}
 input[type=tel] {border:1px solid #d4d4d4; background:#fff; height:40px; line-height:100%; color:#333; font-size:15px; padding:0 10px; box-sizing:border-box;}
 input[type=number] {border:1px solid #d4d4d4; background:#fff; height:40px; line-height:100%; color:#333; font-size:15px; padding:0 10px; box-sizing:border-box;}
@@ -1874,2969 +1871,3049 @@ input[type=date] {border:1px solid #d4d4d4; background:#fff; height:40px; line-h
 input[type=date]::-webkit-outer-spin-button, input[type=date]::-webkit-inner-spin-button{-webkit-appearance:none; margin:0;}
 input[type=email] {border:1px solid #d4d4d4; background:#fff; height:40px; line-height:100%; color:#333; font-size:15px; padding:0 10px; box-sizing:border-box;} */
 
-  .select {
-    height: 40px;
-    overflow: hidden;
-    position: relative;
-    border: 1px solid #d4d4d4;
-    background: #fff;
-    margin-bottom: 3px;
-    box-sizing: border-box;
-  }
-  .select:only-child {
-    margin-bottom: 0;
-  }
-  .select select {
-    width: 100%;
-    height: 40px;
-    border: none;
-    color: #333;
-    font-size: 15px;
-    text-indent: 10px;
-    letter-spacing: -1px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    -webkit-appearance: none;
-    background: transparent;
-  }
-  .select .ic_arrow {
-    width: 40px;
-    height: 30px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    margin-top: -15px;
-  }
-  .select .ic_arrow span {
-    background-position: -100px -30px;
-    width: 15px;
-    height: 20px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -10px 0 0 -7px;
-  }
+.select {
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #d4d4d4;
+  background: #fff;
+  margin-bottom: 3px;
+  box-sizing: border-box;
+}
+.select:only-child {
+  margin-bottom: 0;
+}
+.select select {
+  width: 100%;
+  height: 40px;
+  border: none;
+  color: #333;
+  font-size: 15px;
+  text-indent: 10px;
+  letter-spacing: -1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-appearance: none;
+  background: transparent;
+}
+.select .ic_arrow {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -15px;
+}
+.select .ic_arrow span {
+  background-position: -100px -30px;
+  width: 15px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -10px 0 0 -7px;
+}
 
-  input:focus {
-    color: #000 !important;
-  }
-  input::-webkit-input-placeholder {
-    line-height: 100%;
-    color: #999;
-  }
-  input::input-placeholder {
-    line-height: 100%;
-    color: #999;
-  }
-  .input_ess::-webkit-input-placeholder {
-    line-height: 100%;
-    color: #ff6c00;
-  }
-  .input_ess::input-placeholder {
-    line-height: 100%;
-    color: #ff6c00;
-  }
+input:focus {
+  color: #000 !important;
+}
+input::-webkit-input-placeholder {
+  line-height: 100%;
+  color: #999;
+}
+input::input-placeholder {
+  line-height: 100%;
+  color: #999;
+}
+.input_ess::-webkit-input-placeholder {
+  line-height: 100%;
+  color: #ff6c00;
+}
+.input_ess::input-placeholder {
+  line-height: 100%;
+  color: #ff6c00;
+}
 
-  textarea {
-    border: 1px solid #d4d4d4 !important;
-    background: #fff !important;
-    line-height: 18px;
-    color: #333;
-    padding: 5px;
-    box-sizing: border-box;
-    width: 100%;
-  }
-  textarea:focus {
-    color: #000 !important;
-  }
-  textarea::-webkit-input-placeholder {
-    color: #999;
-  }
-  textarea::input-placeholder {
-    color: #999;
-  }
+textarea {
+  border: 1px solid #d4d4d4 !important;
+  background: #fff !important;
+  line-height: 18px;
+  color: #333;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 100%;
+}
+textarea:focus {
+  color: #000 !important;
+}
+textarea::-webkit-input-placeholder {
+  color: #999;
+}
+textarea::input-placeholder {
+  color: #999;
+}
 
-  .reserve_wrap {
-    background: #ccc;
-  }
-  .reserve_wrap span,
-  .reserve_wrap a {
-    display: inline-block;
-  }
-  .reserve_wrap button {
-    border: 0;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-  }
+.reserve_wrap {
+  background: #ccc;
+}
+.reserve_wrap span,
+.reserve_wrap a {
+  display: inline-block;
+}
+.reserve_wrap button {
+  border: 0;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
 
-  .reserve_wrap .step_area {
-    background: #878787;
-    padding-bottom: 128px;
-    margin-bottom: 15px;
-  }
-  .reserve_wrap .step_area ul {
-    position: relative;
-  }
-  .reserve_wrap .step_area li {
-    list-style: none;
-    float: left;
-    width: 25%;
-    box-sizing: border-box;
-    border-right: 1px dotted rgba(0, 0, 0, 0.2);
-    height: 90px;
-  }
-  .reserve_wrap .step_area li:last-of-type {
-    border-right: 0;
-  }
-  .reserve_wrap .step_area .step {
-    background: #878787;
-    display: block;
-    text-align: center;
-    padding: 10px 0;
-  }
-  .reserve_wrap .step_area .tx {
-    display: block;
-    font-family: helvetica;
-    color: #fff;
-    font-size: 11px;
-  }
-  .reserve_wrap .step_area .ic {
-    background: transparent
-      url("http://www.saemip.com/pages/images/reserve/reserve_step.png")
-      no-repeat;
-    background-size: 200px;
-    width: 50px;
-    height: 50px;
-  }
-  .reserve_wrap .step_area li:nth-child(1) .ic {
-    background-position: 0 0;
-  }
-  .reserve_wrap .step_area li:nth-child(2) .ic {
-    background-position: -50px 0;
-  }
-  .reserve_wrap .step_area li:nth-child(3) .ic {
-    background-position: -100px 0;
-  }
-  .reserve_wrap .step_area li:nth-child(4) .ic {
-    background-position: -150px 0;
-  }
-  .reserve_wrap .step_area li:nth-child(1) .hit {
-    background: #f8ad00;
-  }
-  .reserve_wrap .step_area li:nth-child(2) .hit {
-    background: #00a1f0;
-  }
-  .reserve_wrap .step_area li:nth-child(3) .hit {
-    background: #71ba2f;
-  }
-  .reserve_wrap .step_area li:nth-child(4) .hit {
-    background: #8d81bc;
-  }
-  .reserve_wrap .step_area .txt {
-    text-align: center;
-    color: #fff;
-    font-size: 18px;
-    padding: 12px 0 10px 0;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 85px;
-    display: none;
-    box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.2);
-    font-weight: bold;
-  }
-  .reserve_wrap .step_area .hit + .txt {
-    display: block;
-  }
-  .reserve_wrap .step_area li:nth-child(1) .txt {
-    background: #f8ad00;
-  }
-  .reserve_wrap .step_area li:nth-child(2) .txt {
-    background: #00a1f0;
-  }
-  .reserve_wrap .step_area li:nth-child(3) .txt {
-    background: #71ba2f;
-  }
-  .reserve_wrap .step_area li:nth-child(4) .txt {
-    background: #8d81bc;
-  }
+.reserve_wrap .step_area {
+  background: #878787;
+  padding-bottom: 128px;
+  margin-bottom: 15px;
+}
+.reserve_wrap .step_area ul {
+  position: relative;
+}
+.reserve_wrap .step_area li {
+  list-style: none;
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  border-right: 1px dotted rgba(0, 0, 0, 0.2);
+  height: 90px;
+}
+.reserve_wrap .step_area li:last-of-type {
+  border-right: 0;
+}
+.reserve_wrap .step_area .step {
+  background: #878787;
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
+.reserve_wrap .step_area .tx {
+  display: block;
+  font-family: helvetica;
+  color: #fff;
+  font-size: 11px;
+}
+.reserve_wrap .step_area .ic {
+  background: transparent
+    url("http://www.saemip.com/pages/images/reserve/reserve_step.png") no-repeat;
+  background-size: 200px;
+  width: 50px;
+  height: 50px;
+}
+.reserve_wrap .step_area li:nth-child(1) .ic {
+  background-position: 0 0;
+}
+.reserve_wrap .step_area li:nth-child(2) .ic {
+  background-position: -50px 0;
+}
+.reserve_wrap .step_area li:nth-child(3) .ic {
+  background-position: -100px 0;
+}
+.reserve_wrap .step_area li:nth-child(4) .ic {
+  background-position: -150px 0;
+}
+.reserve_wrap .step_area li:nth-child(1) .hit {
+  background: #f8ad00;
+}
+.reserve_wrap .step_area li:nth-child(2) .hit {
+  background: #00a1f0;
+}
+.reserve_wrap .step_area li:nth-child(3) .hit {
+  background: #71ba2f;
+}
+.reserve_wrap .step_area li:nth-child(4) .hit {
+  background: #8d81bc;
+}
+.reserve_wrap .step_area .txt {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 0 10px 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 85px;
+  display: none;
+  box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+.reserve_wrap .step_area .hit + .txt {
+  display: block;
+}
+.reserve_wrap .step_area li:nth-child(1) .txt {
+  background: #f8ad00;
+}
+.reserve_wrap .step_area li:nth-child(2) .txt {
+  background: #00a1f0;
+}
+.reserve_wrap .step_area li:nth-child(3) .txt {
+  background: #71ba2f;
+}
+.reserve_wrap .step_area li:nth-child(4) .txt {
+  background: #8d81bc;
+}
 
-  .reserve_wrap .box_wrap {
-    background: #fff;
-    margin: 10px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-    border-radius: 3px;
-    overflow: hidden;
-  }
-  .reserve_wrap .guide_area {
-    padding: 15px 15px 15px 60px;
-    background: #fff
-      url("http://www.saemip.com/pages/images/reserve/ic_guide.png") 15px center
-      no-repeat;
-    background-size: 30px;
-    line-height: 14px;
-  }
+.reserve_wrap .box_wrap {
+  background: #fff;
+  margin: 10px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.reserve_wrap .guide_area {
+  padding: 15px 15px 15px 60px;
+  background: #fff
+    url("http://www.saemip.com/pages/images/reserve/ic_guide.png") 15px center
+    no-repeat;
+  background-size: 30px;
+  line-height: 14px;
+}
 
-  .reserve_wrap .agree_box {
-    overflow: hidden;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    position: relative;
-  }
-  .reserve_wrap .agree_box:last-child {
-    border-bottom: 0;
-  }
-  .reserve_wrap .agree_box label {
-    display: block;
-    padding: 15px;
-    color: #333;
-    font-size: 16px;
-    letter-spacing: -1px;
-    box-sizing: border-box;
-    margin-right: 50px;
-  }
-  .reserve_wrap .agree_box .open_view {
-    display: none;
-  }
-  .reserve_wrap .agree_box .btn_view {
-    background: rgba(0, 0, 0, 0.1);
-    position: absolute;
-    right: 10px;
-    top: 8px;
-    padding: 0 12px;
-    border-radius: 5px;
-    height: 35px;
-    z-index: 1000;
-  }
-  .reserve_wrap .agree_box .btn_view span {
-    background: transparent
-      url("http://www.saemip.com/pages/images/reserve/ic_updown.png") no-repeat;
-    background-size: 30px;
-    width: 15px;
-    height: 15px;
-    margin-top: 10px;
-  }
-  .reserve_wrap .agree_box .btn_view .ic {
-    background-position: -15px 0;
-  }
-  .reserve_wrap .agree_open .open_view {
-    display: block;
-    padding: 15px 20px;
-    background: rgba(0, 0, 0, 0.1);
-    border-top: 1px dashed rgba(0, 0, 0, 0.2);
-    color: #333;
-  }
-  .reserve_wrap .agree_open .btn_view {
-    background: rgba(0, 0, 0, 0.5);
-  }
-  .reserve_wrap .agree_open .btn_view .ic {
-    background-position: 0 0;
-  }
+.reserve_wrap .agree_box {
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.reserve_wrap .agree_box:last-child {
+  border-bottom: 0;
+}
+.reserve_wrap .agree_box label {
+  display: block;
+  padding: 15px;
+  color: #333;
+  font-size: 16px;
+  letter-spacing: -1px;
+  box-sizing: border-box;
+  margin-right: 50px;
+}
+.reserve_wrap .agree_box .open_view {
+  display: none;
+}
+.reserve_wrap .agree_box .btn_view {
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  padding: 0 12px;
+  border-radius: 5px;
+  height: 35px;
+  z-index: 1000;
+}
+.reserve_wrap .agree_box .btn_view span {
+  background: transparent
+    url("http://www.saemip.com/pages/images/reserve/ic_updown.png") no-repeat;
+  background-size: 30px;
+  width: 15px;
+  height: 15px;
+  margin-top: 10px;
+}
+.reserve_wrap .agree_box .btn_view .ic {
+  background-position: -15px 0;
+}
+.reserve_wrap .agree_open .open_view {
+  display: block;
+  padding: 15px 20px;
+  background: rgba(0, 0, 0, 0.1);
+  border-top: 1px dashed rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+.reserve_wrap .agree_open .btn_view {
+  background: rgba(0, 0, 0, 0.5);
+}
+.reserve_wrap .agree_open .btn_view .ic {
+  background-position: 0 0;
+}
 
-  .reserve_wrap .form_box {
-    padding-bottom: 5px;
-  }
-  .reserve_wrap .form_box .group_title {
-    color: #333;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    font-size: 16px;
-    padding: 10px 0 10px 0;
-    margin-bottom: 5px;
-    overflow: hidden;
-    font-weight: bold;
-    background: -webkit-gradient(
-      linear,
-      0% 100%,
-      0% 0%,
-      from(#e2e2e2),
-      to(#fefefe)
-    );
-  }
-  .reserve_wrap .form_box .group_title .bullet {
-    width: 5px;
-    height: 5px;
-    background: #da1616;
-    border-radius: 30px;
-    float: left;
-    margin: 8px 5px 0 10px;
-  }
-  .reserve_wrap .form_box .group_title b {
-    color: #fd5ba0;
-    margin-left: 15px;
-    border-left: 1px solid rgba(0, 0, 0, 0.2);
-    padding-left: 10px;
-  }
+.reserve_wrap .form_box {
+  padding-bottom: 5px;
+}
+.reserve_wrap .form_box .group_title {
+  color: #333;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  padding: 10px 0 10px 0;
+  margin-bottom: 5px;
+  overflow: hidden;
+  font-weight: bold;
+  background: -webkit-gradient(
+    linear,
+    0% 100%,
+    0% 0%,
+    from(#e2e2e2),
+    to(#fefefe)
+  );
+}
+.reserve_wrap .form_box .group_title .bullet {
+  width: 5px;
+  height: 5px;
+  background: #da1616;
+  border-radius: 30px;
+  float: left;
+  margin: 8px 5px 0 10px;
+}
+.reserve_wrap .form_box .group_title b {
+  color: #fd5ba0;
+  margin-left: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  padding-left: 10px;
+}
 
-  .reserve_wrap .form_box dt {
-    padding: 6px 10px;
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
-    min-height: 40px;
-    overflow: hidden;
-    position: relative;
-  }
-  .reserve_wrap .form_box dd {
-    position: relative;
-    padding: 6px 10px;
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
-    min-height: 40px;
-    overflow: hidden;
-  }
-  .reserve_wrap .form_box dd:last-child {
-    border-bottom: 0;
-  }
-  .reserve_wrap .form_box dt:last-child {
-    border-bottom: 0;
-  }
-  .reserve_wrap .form_box input {
-    width: 100%;
-  }
-  .reserve_wrap .form_box label {
-    overflow: hidden;
-    float: left;
-    font-size: 16px;
-    padding: 10px 0;
-    margin-right: 20px;
-  }
-  .reserve_wrap .form_box label input {
-    margin-right: 5px;
-  }
-  .reserve_wrap .form_box textarea {
-    height: 100px;
-  }
-  .reserve_wrap .form_box .input_date {
-    width: 37% !important;
-    float: left;
-    font-family: helvetica;
-    letter-spacing: -0.5px;
-  }
-  .reserve_wrap .form_box .input_half {
-    width: 50% !important;
-    float: left;
-    font-family: helvetica;
-    letter-spacing: -0.5px;
-  }
-  .reserve_wrap .form_box .input_half:last-of-type {
-    float: right;
-    width: 49% !important;
-  }
-  .reserve_wrap .form_box .input_tel2 {
-    margin-left: 105px;
-  }
-  .reserve_wrap .form_box .input_tel1 {
-    width: 100px;
-    position: absolute !important;
-    left: 10px;
-  }
+.reserve_wrap .form_box dt {
+  padding: 6px 10px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+  min-height: 40px;
+  overflow: hidden;
+  position: relative;
+}
+.reserve_wrap .form_box dd {
+  position: relative;
+  padding: 6px 10px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+  min-height: 40px;
+  overflow: hidden;
+}
+.reserve_wrap .form_box dd:last-child {
+  border-bottom: 0;
+}
+.reserve_wrap .form_box dt:last-child {
+  border-bottom: 0;
+}
+.reserve_wrap .form_box input {
+  width: 100%;
+}
+.reserve_wrap .form_box label {
+  overflow: hidden;
+  float: left;
+  font-size: 16px;
+  padding: 10px 0;
+  margin-right: 20px;
+}
+.reserve_wrap .form_box label input {
+  margin-right: 5px;
+}
+.reserve_wrap .form_box textarea {
+  height: 100px;
+}
+.reserve_wrap .form_box .input_date {
+  width: 37% !important;
+  float: left;
+  font-family: helvetica;
+  letter-spacing: -0.5px;
+}
+.reserve_wrap .form_box .input_half {
+  width: 50% !important;
+  float: left;
+  font-family: helvetica;
+  letter-spacing: -0.5px;
+}
+.reserve_wrap .form_box .input_half:last-of-type {
+  float: right;
+  width: 49% !important;
+}
+.reserve_wrap .form_box .input_tel2 {
+  margin-left: 105px;
+}
+.reserve_wrap .form_box .input_tel1 {
+  width: 100px;
+  position: absolute !important;
+  left: 10px;
+}
 
-  .reserve_wrap .form_box .total_day {
-    background: rgba(0, 0, 0, 0.5);
-    height: 40px;
-    line-height: 40px;
-    padding: 0 10px;
-    font-size: 16px;
-    color: #fff;
-    float: left;
-    border-radius: 60px;
-    margin-left: 7px;
-  }
-  .reserve_wrap .form_box .unit {
-    float: left;
-    line-height: 40px;
-    margin: 0 6px;
-    font-weight: bold;
-    color: #333;
-  }
+.reserve_wrap .form_box .total_day {
+  background: rgba(0, 0, 0, 0.5);
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #fff;
+  float: left;
+  border-radius: 60px;
+  margin-left: 7px;
+}
+.reserve_wrap .form_box .unit {
+  float: left;
+  line-height: 40px;
+  margin: 0 6px;
+  font-weight: bold;
+  color: #333;
+}
 
-  .reserve_wrap .form_box .opt {
-    position: absolute;
-    font-size: 15px;
-    color: #555;
-    line-height: 40px;
-    padding-left: 5px;
-  }
-  .reserve_wrap .form_box .value {
-    margin-left: 60px;
-    overflow: hidden;
-    position: relative;
-  }
-  .reserve_wrap .form_box dt .value {
-    margin-left: 0;
-  }
+.reserve_wrap .form_box .opt {
+  position: absolute;
+  font-size: 15px;
+  color: #555;
+  line-height: 40px;
+  padding-left: 5px;
+}
+.reserve_wrap .form_box .value {
+  margin-left: 60px;
+  overflow: hidden;
+  position: relative;
+}
+.reserve_wrap .form_box dt .value {
+  margin-left: 0;
+}
 
-  .reserve_wrap .form_box .btn_updown {
-    width: 40px;
-    height: 40px;
-    background: #ebebeb;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-  }
-  .reserve_wrap .form_box .btn_updown svg {
-    width: 20px;
-    height: 20px;
-    margin: 12px;
-  }
-  .reserve_wrap .form_box .btn_updown svg {
-    fill: #666;
-  }
-  .reserve_wrap .form_box .btn_updown:first-of-type {
-    left: 0;
-    border-radius: 5px 0 0 5px;
-  }
-  .reserve_wrap .form_box .btn_updown:last-of-type {
-    right: 0;
-    border-radius: 0 5px 5px 0;
-  }
-  .reserve_wrap .form_box .input_updown {
-    margin: 0 38px;
-  }
+.reserve_wrap .form_box .btn_updown {
+  width: 40px;
+  height: 40px;
+  background: #ebebeb;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+}
+.reserve_wrap .form_box .btn_updown svg {
+  width: 20px;
+  height: 20px;
+  margin: 12px;
+}
+.reserve_wrap .form_box .btn_updown svg {
+  fill: #666;
+}
+.reserve_wrap .form_box .btn_updown:first-of-type {
+  left: 0;
+  border-radius: 5px 0 0 5px;
+}
+.reserve_wrap .form_box .btn_updown:last-of-type {
+  right: 0;
+  border-radius: 0 5px 5px 0;
+}
+.reserve_wrap .form_box .input_updown {
+  margin: 0 38px;
+}
 
-  .reserve_wrap .btn_box {
-    overflow: hidden;
-    padding: 10px 10px 20px 10px;
-  }
-  .reserve_wrap .btn_box .btn {
-    text-align: center;
-    color: #fff;
-    font-size: 18px;
-    letter-spacing: -1px;
-    padding: 15px 0;
-    border-radius: 3px;
-    position: relative;
-    float: left;
-    width: 49%;
-  }
-  .reserve_wrap .btn_box .btn:first-child {
-    float: left;
-    background: #3c424e;
-  }
-  .reserve_wrap .btn_box .btn:last-child {
-    float: right;
-    background: #fc5b9f;
-  }
-  .reserve_wrap .btn_box .btn:only-child {
-    background: #fc5b9f;
-    width: 100%;
-  }
-  .reserve_wrap .btn_box .btn span {
-    background: transparent
-      url("http://www.saemip.com/pages/images/reserve/ic_prevnext.png")
-      no-repeat;
-    background-size: 30px;
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-  }
-  .reserve_wrap .btn_box .btn .ic_prev {
-    background-position: 0 0;
-    left: 0;
-    margin: -7px 0 0 5px;
-  }
-  .reserve_wrap .btn_box .btn .ic_next {
-    background-position: -15px 0;
-    margin: -7px 5px 0 0;
-  }
+.reserve_wrap .btn_box {
+  overflow: hidden;
+  padding: 10px 10px 20px 10px;
+}
+.reserve_wrap .btn_box .btn {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: -1px;
+  padding: 15px 0;
+  border-radius: 3px;
+  position: relative;
+  float: left;
+  width: 49%;
+}
+.reserve_wrap .btn_box .btn:first-child {
+  float: left;
+  background: #3c424e;
+}
+.reserve_wrap .btn_box .btn:last-child {
+  float: right;
+  background: #fc5b9f;
+}
+.reserve_wrap .btn_box .btn:only-child {
+  background: #fc5b9f;
+  width: 100%;
+}
+.reserve_wrap .btn_box .btn span {
+  background: transparent
+    url("http://www.saemip.com/pages/images/reserve/ic_prevnext.png") no-repeat;
+  background-size: 30px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+.reserve_wrap .btn_box .btn .ic_prev {
+  background-position: 0 0;
+  left: 0;
+  margin: -7px 0 0 5px;
+}
+.reserve_wrap .btn_box .btn .ic_next {
+  background-position: -15px 0;
+  margin: -7px 5px 0 0;
+}
 
-  /* 2014-11-18 페이온시스템 인트로추가 */
+/* 2014-11-18 페이온시스템 인트로추가 */
 
-  .intro_area {
-    margin: 15px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    background: #fff;
-    border-radius: 10px;
-  }
+.intro_area {
+  margin: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  border-radius: 10px;
+}
 
-  .intro_area .intro_box {
-    text-align: center;
-    padding: 15px;
-  }
-  .intro_area .logo {
-    margin-bottom: 20px;
-  }
-  .intro_area .logo img {
-    width: 100%;
-  }
+.intro_area .intro_box {
+  text-align: center;
+  padding: 15px;
+}
+.intro_area .logo {
+  margin-bottom: 20px;
+}
+.intro_area .logo img {
+  width: 100%;
+}
 
-  .intro_area .login_box {
-    background: #332323;
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 20px;
-  }
-  .intro_area .input_box {
-    background: #fff;
-    border-radius: 30px;
-    height: 46px;
-    overflow: hidden;
-    margin-bottom: 5px;
-  }
-  .intro_area .input_box input {
-    background: none;
-    border: 0;
-    height: 46px;
-    line-height: 46px;
-    font-size: 16px;
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-  .intro_area .btn_login {
-    background: #d60d04;
-    border: 0;
-    border-radius: 30px;
-    width: 100%;
-    color: #fff;
-    padding: 10px 0;
-    font-size: 20px;
-    font-weight: 600;
-  }
+.intro_area .login_box {
+  background: #332323;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+}
+.intro_area .input_box {
+  background: #fff;
+  border-radius: 30px;
+  height: 46px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.intro_area .input_box input {
+  background: none;
+  border: 0;
+  height: 46px;
+  line-height: 46px;
+  font-size: 16px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.intro_area .btn_login {
+  background: #d60d04;
+  border: 0;
+  border-radius: 30px;
+  width: 100%;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
 
-  .intro_area .other_btn {
-    overflow: hidden;
-    margin-top: 10px;
-  }
-  .intro_area .other_btn a {
-    float: left;
-    background: rgba(0, 0, 0, 0.3);
-    width: 49%;
-    border-radius: 30px;
-    padding: 5px 0;
-    color: #fff;
-    text-align: center;
-    letter-spacing: -1px;
-  }
-  .intro_area .other_btn a:last-child {
-    float: right;
-  }
+.intro_area .other_btn {
+  overflow: hidden;
+  margin-top: 10px;
+}
+.intro_area .other_btn a {
+  float: left;
+  background: rgba(0, 0, 0, 0.3);
+  width: 49%;
+  border-radius: 30px;
+  padding: 5px 0;
+  color: #fff;
+  text-align: center;
+  letter-spacing: -1px;
+}
+.intro_area .other_btn a:last-child {
+  float: right;
+}
 
-  .intro_area .cscenter {
-    margin-top: 15px;
-    text-align: left;
-    border-top: 1px dashed rgba(0, 0, 0, 0.1);
-    padding-top: 10px;
-  }
-  .intro_area .cscenter b {
-    color: #d60c04;
-  }
+.intro_area .cscenter {
+  margin-top: 15px;
+  text-align: left;
+  border-top: 1px dashed rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+}
+.intro_area .cscenter b {
+  color: #d60c04;
+}
 
-  /* 옵션수량 패치 */
-  #container_sub .view_option .opt_list .updown input {
-    width: 37px;
-    border: 2px solid #dbdbdb;
-    height: 27px;
-    text-align: center;
-    float: left;
-    font-size: 13px;
-    color: #000;
-    font-weight: bold;
-    line-height: normal;
-    padding: 0;
-    -webkit-appearance: none;
-    -webkit-gradient: none;
-    -webkit-border-radius: 0;
-  }
+/* 옵션수량 패치 */
+#container_sub .view_option .opt_list .updown input {
+  width: 37px;
+  border: 2px solid #dbdbdb;
+  height: 27px;
+  text-align: center;
+  float: left;
+  font-size: 13px;
+  color: #000;
+  font-weight: bold;
+  line-height: normal;
+  padding: 0;
+  -webkit-appearance: none;
+  -webkit-gradient: none;
+  -webkit-border-radius: 0;
+}
 
-  /* 에디터 Override */
-  .editor {
-    background: transparent;
-    margin: 0;
-  }
-  .editor {
-    font-family: inherit;
-    color: inherit;
-    font-size: 12px;
-  }
-  .editor span,
-  .editor b,
-  .editor p,
-  .editor em,
-  .editor strong,
-  .editor div {
-    color: inherit;
-  }
-  .editor p {
-    margin: 0;
-    padding: 0;
-  }
-  .editor ul,
-  .editor ul li {
-    list-style-type: disc;
-    list-style-position: inside;
-    padding-left: 1em;
-    margin-left: 0;
-  }
-  .editor ol,
-  .editor ol li {
-    list-style-type: decimal;
-    list-style-position: inside;
-    padding-left: 1em;
-    margin-left: 0;
-  }
-  .editor span {
-    display: inline;
-    font-size: inherit;
-    font-style: inherit;
-    font-weight: inherit;
-  }
-  .editor em {
-    font-style: italic;
-  }
-  .editor b {
-    font-weight: bold;
-  }
-  .editor strong {
-    font-weight: bold;
-  }
-  .editor img {
-    max-width: 100% !important;
-  }
-  .editor table {
-    margin: inherit;
-    padding: inherit;
-    border: inherit;
-    border-collapse: collapse;
-    border-spacing: inherit;
-    background-image: inherit;
-    border-color: inherit;
-  }
-  .editor td {
-    border-width: 1px;
-    border-style: solid;
-    border-color: transparent;
-  }
-
-  .editor div,
-  .editor img {
-    max-width: 100% !important;
-  }
-
-  .editor_content {
-    background: transparent;
-    min-height: 130px;
-    padding: 10px;
-    margin: 0;
-  }
-  .editor_content {
-    font-family: inherit;
-    color: inherit;
-    font-size: 12px;
-  }
-  .editor_content span,
-  .editor_content b,
-  .editor_content p,
-  .editor_content em,
-  .editor_content strong,
-  .editor_content div {
-    color: inherit;
-  }
-  .editor_content p {
-    margin: 0;
-    padding: 0;
-  }
-  .editor_content ul,
-  .editor_content ul li {
-    list-style-type: disc;
-    list-style-position: inside;
-    padding-left: 1em;
-    margin-left: 0;
-  }
-  .editor_content ol,
-  .editor_content ol li {
-    list-style-type: decimal;
-    list-style-position: inside;
-    padding-left: 1em;
-    margin-left: 0;
-  }
-  .editor_content span {
-    display: inline;
-    font-size: inherit;
-    font-style: inherit;
-    font-weight: inherit;
-  }
-  .editor_content em {
-    font-style: italic;
-  }
-  .editor_content b {
-    font-weight: bold;
-  }
-  .editor_content strong {
-    font-weight: bold;
-  }
-  .editor_content img {
-    max-width: 100% !important;
-  }
-  .editor_content table {
-    margin: inherit;
-    padding: inherit;
-    border: inherit;
-    border-collapse: collapse;
-    border-spacing: inherit;
-    background-image: inherit;
-    border-color: inherit;
-  }
-
-  .editor_content div,
-  .editor_content img {
-    max-width: 100% !important;
-  }
-
-  #container_sub .inner_board_form .textarea {
-    clear: both;
-    background: #fff !important;
-    border: 1px solid #fff;
-    overflow: hidden;
-    padding: 0;
-    -webkit-box-shadow: none;
-  }
-  #container_sub .inner_board_form .textarea textarea {
-    width: 100%;
-    padding: 10px;
-    min-height: 100px !important;
-    background: #eee !important;
-    webkit-box-shadow: inset 1px 1px 1px #797777;
-    border: none !important;
-    font-size: 12px !important;
-    color: #999;
-  }
-  #container_sub .inner_board_form .textarea textarea:focus {
-    color: #333;
-  }
-
-  /* 2015-04-14 메인 지역별 인기상품 추가 */
-  .main_local_t {
-    overflow: hidden;
-    clear: both;
-    height: 43px;
-    background: #ff4011;
-    position: relative;
-  }
-  .main_local_t .title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 15px;
-    font-weight: bold;
-    color: #fff;
-    letter-spacing: -1px;
-    float: left;
-    line-height: 43px;
-    width: 120px;
-    text-align: center;
-    overflow: hidden;
-  }
-  .main_local_t .local {
-    position: relative;
-    margin: 3px 5px 0 120px;
-    overflow: hidden;
-  }
-
-  /* 셀렉트박스 */
-  .main_local_t .more {
-    float: left;
-    width: 100%;
-    overflow: hidden;
-  }
-  .main_local_t .more {
-    display: block;
-    height: 35px;
-    position: relative;
-    background: #fff;
-    box-sizing: border-box;
-  }
-  .main_local_t .ic {
-    float: left;
-    overflow: hidden;
-    margin: 8px;
-  }
-  .main_local_t .ic img {
-    float: left;
-    height: 18px;
-  }
-  .main_local_t .more .ic_more {
-    width: 10px;
-    height: 20px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    margin: -4px 15px 0 0;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-  }
-  .main_local_t .more .ic_more img {
-    float: left;
-    width: 15px;
-  }
-  .main_local_t .more select {
-    text-indent: 23px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 35px;
-    font-weight: bold;
-    line-height: 33px;
-    border: none;
-    color: #71ad2c;
-    font-size: 14px;
-    letter-spacing: -1px;
-    -webkit-appearance: none;
-  }
-  .main_local_t .more select {
-    /*background:#fff url('http://www.saemip.com/pages/images/main_local.png') left center no-repeat; background-size: 0 18px*/
-    background: transparent;
-  }
-
-  /* 정렬하기 */
-  .select_sort {
-    float: right !important;
-    width: 80px !important;
-    margin-right: 5px !important;
-    border-radius: 30px !important;
-    background: #eee !important;
-    border: 1px solid rgba(0, 0, 0, 0.2) !important;
-  }
-  .select_sort select {
-    padding-left: 5px !important;
-  }
-
-  /* ●●●●● 상품쿠폰관련 추가 2015-06-23 */
-
-  /* 상품리스트 아이콘 */
-  .coupon_list_upper {
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
-    z-index: 1;
-  }
-  .coupon_list_upper img {
-    width: 35px;
-  }
-
-  /* 제품상세 쿠폰정보*/
-  .coupon_view_icon {
-    position: relative;
-    overflow: hidden;
-    margin: 10px;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  .coupon_view_icon span {
-    line-height: 1.2;
-  }
-  .coupon_view_icon .white_box {
-    height: 55px;
-    padding: 10px;
-    float: left;
-    background: #fff;
-    box-sizing: border-box;
-    width: 60%;
-    border: 1px solid #ff6c24;
-    border-radius: 8px 0 0 8px;
-  }
-  .coupon_view_icon .coupon_ti {
-    display: block;
-    color: #999;
-    letter-spacing: -1.5px;
-  }
-  .coupon_view_icon .coupon_name {
-    display: block;
-    color: #000;
-    letter-spacing: -1px;
-    margin-top: 3px;
-    font-size: 14px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-  }
-
-  .coupon_view_icon .color_box {
-    height: 55px;
-    background: #ff6c24;
-    box-sizing: border-box;
-    width: 40%;
-    float: right;
-    padding: 10px;
-    position: relative;
-    border-radius: 0 8px 8px 0;
-  }
-  .coupon_view_icon .coupon_discount {
-    color: #fff;
-    margin: 0 7px 0 0;
-    font-weight: 600;
-    background: transparent
-      url("http://www.saemip.com/pages/images/coupon_view_down.png") right 4px
-      no-repeat;
-    background-size: 10px;
-    padding-right: 12px;
-    font-size: 15px;
-  }
-  .coupon_view_icon .coupon_price {
-    display: block;
-    color: #fff;
-    margin-top: 1px;
-  }
-  .coupon_view_icon .edge1 {
-    background: #fff;
-    border-radius: 60px;
-    height: 15px;
-    width: 15px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    left: -8px;
-    top: -10px;
-  }
-  .coupon_view_icon .edge2 {
-    background: #fff;
-    border-radius: 60px;
-    height: 15px;
-    width: 15px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    left: -8px;
-    bottom: -10px;
-  }
-
-  /* 로딩페이지 */
-  .minishop_loading_wrap {
-    width: 100%;
-    overflow: hidden;
-  }
-  .minishop_loading_wrap .floating_box {
-    width: 100%;
-    height: 200px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    margin-top: -170px;
-    background: #71ad2c;
-  }
-  .minishop_loading_wrap .logo {
-    padding-bottom: 14px;
-    padding-top: 19px;
-    margin: 0 auto;
-    width: 195px;
-    height: 40px;
-    text-align: center;
-  }
-  .minishop_loading_wrap .logo img {
-    width: 70%;
-  }
-  .minishop_loading_wrap .inner_box {
-    overflow: hidden;
-    padding: 28px 0 20px 0;
-    text-align: center;
-    margin: 0 auto;
-    position: relative;
-    background: #ffffff;
-  }
-  .minishop_loading_wrap .loading {
-    text-align: center;
-  }
-  .minishop_loading_wrap .text {
-    text-align: center;
-    margin-top: 20px;
-  }
-  .minishop_loading_wrap .text dl {
-    overflow: hidden;
-    display: inline-block;
-  }
-  .minishop_loading_wrap .text dt {
-    padding-bottom: 20px;
-    color: #000000;
-    font-size: 13px;
-    font-weight: bold;
-  }
-  .minishop_loading_wrap .text dt .go_shop {
-    color: #de2a2a;
-    font-size: 13px;
-    font-weight: bold;
-  }
-  .minishop_loading_wrap .text dd {
-    font-size: 8pt;
-    color: #88898e;
-    line-height: 1.3;
-  }
-  .minishop_loading_wrap .copyright {
-    font-size: 7pt;
-    letter-spacing: 0px;
-    font-weight: 700;
-    padding-top: 15px;
-    color: #b2b2b2;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  .minishop_loading_wrap .copyright em {
-    color: #5b5b5b;
-  }
-
-  .minishop_loading_wrap .loading {
-    width: 50px;
-    height: 50px;
-    border: 5px solid rgba(50, 50, 50, 0.1);
-    border-radius: 50%;
-    border-top-color: #71ad2c;
-    box-sizing: border-box;
-    -webkit-animation: spin 0.8s ease-in-out infinite;
-    -webkit-animation: spin 0.8s ease-in-out infinite;
-    margin: 0 auto;
-  }
-
-  @keyframes spin {
-    to {
-      -webkit-transform: rotate(360deg);
-    }
-  }
-  @-webkit-keyframes spin {
-    to {
-      -webkit-transform: rotate(360deg);
-    }
-  }
-
-  /* 리스트타입추가  */
-  .upper_link {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-  }
-  .minishop_item_list {
-    overflow: hidden;
-    background: #f8f8f8;
-    margin-bottom: 30px;
-  }
-  .minishop_item_list li {
-    box-sizing: border-box;
-    list-style: none;
-    background: #fff;
-    border-bottom: 1px solid #e1e1e1;
-  }
-  .minishop_item_list .item_box {
-    overflow: hidden;
-    display: block;
-    box-sizing: border-box;
-    position: relative;
-    padding: 10px;
-    position: relative;
-    min-height: 125px;
-  }
-  .minishop_item_list .item_box .photo_area {
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-  }
-  .minishop_item_list .item_box .photo_area .thumb {
-    float: left;
-    overflow: hidden;
-    width: 100px;
-  }
-  .minishop_item_list .item_box .photo_area .thumb img {
-    width: 100%;
-    float: left;
-  }
-  .minishop_item_list .item_box .info_box {
-    overflow: hidden;
-    margin-left: 110px;
-    padding: 0 10px 10px 0;
-  }
-  .minishop_item_list .item_box .info_box .add_txt {
-    color: #4b4b4b;
-    font-size: 12px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-    margin-bottom: 5px;
-  }
-  .minishop_item_list .item_box .info_box .item_title {
-    color: #131313;
-    font-size: 14px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-    margin-bottom: 3px;
-  }
-  .minishop_item_list .item_box .info_box .item_info {
-    color: #848484;
-    font-size: 12px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-    line-height: 14px;
-  }
-  .minishop_item_list .item_box .bottom_info {
-    position: absolute;
-    bottom: 8px;
-    left: 120px;
-  }
-  .minishop_item_list .item_box .bottom_info .price {
-    color: #fc5b9f;
-    font-size: 16px;
-    font-weight: 600;
-    float: left;
-  }
-  .minishop_item_list .item_box .bottom_info .sale_num {
-    color: #131313;
-    float: left;
-    margin: 3px 0 0 8px;
-    font-size: 12px;
-  }
-
-  /* 반응형 
-@media screen and (min-width:550px) {
-	.minishop_item_list li {width:50%; float:left; }
-	.minishop_item_list li:nth-of-type(2n) {border-left:1px solid #e1e1e1; ;}
-}*/
-
-  /* 미니샵 헤더 */
-  .minishop_header {
-    overflow: hidden;
-    text-align: center;
-    background: #fff;
-    position: relative;
-  }
-  .minishop_header .logo_box {
-    padding: 15px 30px 12px 30px;
-  }
-  .minishop_header img {
-    height: 25px;
-  }
-  .minishop_header .btn_slide {
-    width: 40px;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    box-sizing: border-box;
-    padding-top: 8px;
-  }
-  .minishop_header .btn_slide .shape {
-    display: inline-block;
-    width: 20px;
-    height: 3px;
-    background: rgba(0, 0, 0, 0.6);
-    position: relative;
-  }
-  .minishop_header .btn_slide .shape:before {
-    content: "";
-    width: inherit;
-    height: inherit;
-    background: inherit;
-    position: absolute;
-    left: 0;
-    top: 7px;
-  }
-  .minishop_header .btn_slide .shape:after {
-    content: "";
-    width: inherit;
-    height: inherit;
-    background: inherit;
-    position: absolute;
-    left: 0;
-    top: 14px;
-  }
-
-  /* 미니샵아이템 연결배너 */
-  .minishop_item_banner {
-    background: #eee;
-    overflow: hidden;
-    padding: 8px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  .minishop_item_banner li {
-    list-style: none;
-    width: 33.333%;
-    float: left;
-    box-sizing: border-box;
-    padding: 2px;
-  }
-  .minishop_item_banner .link {
-    overflow: hidden;
-  }
-  .minishop_item_banner .link img {
-    float: left;
-    width: 100%;
-  }
-
-  /* 반응형 */
-  @media screen and (min-width: 550px) {
-    .minishop_item_banner li {
-      width: 25%;
-    }
-  }
-  @media screen and (min-width: 700px) {
-    .minishop_item_banner li {
-      width: 20%;
-    }
-  }
-
-  /* 미니샵 푸터  */
-  .minishop_footer {
-    overflow: hidden;
-    text-align: center;
-    background: #fff;
-    padding: 10px 0;
-  }
-  .minishop_footer img {
-    width: 100%;
-    max-width: 1000px;
-  }
-
-  /* 2015-06-13 후기추가 */
-  .inner_board_list .post .btn a {
-    display: inline-block;
-    border-radius: 2px;
-    border: 1px solid #ccc;
-    background: #fff;
-    line-height: 24px;
-    padding: 0 15px;
-    color: #666;
-    font-size: 11px;
-    font-weight: bold;
-    margin-left: 2px;
-    float: left;
-  }
-  /* 점수별모양 */
-  #container_sub .mark_star {
-    width: 76px;
-  }
-  .inner_board_list .mark_star {
-    display: inline-block;
-    background: transparent
-      url("http://www.saemip.com/pages/images/common/mark.png") no-repeat;
-    background-size: 75px;
-    background-position: 0 0;
-    width: 75px;
-    height: 15px;
-    margin-left: 5px;
-  }
-  .inner_board_list .mark_star .star {
-    display: inline-block;
-    background: transparent
-      url("http://www.saemip.com/pages/images/common/mark.png") no-repeat;
-    background-size: 75px;
-    background-position: 0 -15px;
-    height: 15px;
-  }
-
-  /* 셀렉트박스 */
-  .view_conts_review .select2 {
-    display: block;
-    height: 40px;
-    overflow: hidden;
-    position: relative;
-    border: 1px solid #d4d4d4;
-    background: #fff;
-    margin-bottom: 3px;
-    box-sizing: border-box;
-    clear: both;
-  }
-  .view_conts_review .select2:only-child {
-    margin-bottom: 0;
-  }
-  .view_conts_review .select2 select {
-    width: 100%;
-    height: 40px;
-    border: none;
-    color: #333;
-    font-size: 14px;
-    text-indent: 10px;
-    letter-spacing: -1px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    -webkit-appearance: none;
-    background: transparent;
-  }
-  .view_conts_review .select2 .ic_arrow {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    border-left: 1px solid #e3e3e3;
-    margin-top: -15px;
-    background: #fff
-      url("http://www.saemip.com/pages/images/common/select_arrow.png") center
-      center no-repeat;
-    background-size: 12px;
-  }
-
-  .review_textarea {
-    border: 1px solid #d4d4d4;
-    background: #fff !important;
-    line-height: 18px;
-    color: #333;
-    padding: 5px;
-    box-sizing: border-box;
-    width: 100%;
-  }
-  .review_textarea:focus {
-    color: #000 !important;
-  }
-  .review_textarea::-webkit-input-placeholder {
-    color: #999;
-  }
-  .review_textarea::input-placeholder {
-    color: #999;
-  }
-  .review_textarea:-moz-placeholder {
-    color: #999;
-  }
-  .review_textarea::-moz-placeholder {
-    color: #999;
-  }
-  .review_textarea:-ms-input-placeholder {
-    color: #999;
-  }
-
-  /* ●●●●●●●●●● 레이어팝업 */
-  .cm_ly_pop_tp {
-    border: 2px solid #2c2f34;
-    border-radius: 10px;
-    overflow: hidden;
-    background: #2c2f34;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
-    margin: 10px;
-  }
-  .cm_ly_pop_tp .cm_bottom_button {
-    padding: 20px 0 0 0;
-  }
-
-  /* 기본형 */
-  .cm_ly_pop_tp .title_box {
-    padding: 0 20px;
-    line-height: 50px;
-    color: #fff;
-    font-size: 17px;
-    position: relative;
-    background: #2c2f34;
-  }
-  .cm_ly_pop_tp .btn_close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-  }
-  .cm_ly_pop_tp .btn_close .shape {
-    width: 25px;
-    height: 2px;
-    background: #777;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -1px 0 0 -8px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-  }
-  .cm_ly_pop_tp .btn_close .shape:before {
-    content: "";
-    background: #808080;
-    width: 2px;
-    height: 25px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -12px 0 0 -1px;
-  }
-  .cm_ly_pop_tp .inner_box {
-    overflow: hidden;
-    background: #fff;
-  }
-  .cm_ly_pop_tp .top_txt {
-    color: #555;
-    line-height: 18px;
-    text-align: center;
-    font-size: 14px;
-    border-bottom: 1px solid #ccc;
-    background: #eee;
-    padding: 15px 20px;
-    margin-bottom: 10px;
-  }
-  .cm_ly_pop_tp .top_txt strong {
-    color: #ff2d2d;
-  }
-  .cm_ly_pop_tp .form_box {
-    overflow: hidden;
-    position: relative;
-    background: #eee;
-  }
-  .cm_ly_pop_tp .form_box li {
-    list-style: none;
-    position: relative;
-    border-bottom: 1px solid #eee;
-    background: #fff;
-  }
-  .cm_ly_pop_tp .form_box .opt {
-    position: absolute;
-    left: 10px;
-    top: 5px;
-    height: 45px;
-    line-height: 45px;
-  }
-  .cm_ly_pop_tp .form_box .value {
-    margin-left: 95px;
-    padding: 8px 10px;
-    position: relative;
-    overflow: hidden;
-    box-sizing: border-box;
-  }
-  .cm_ly_pop_tp .form_box .input_design {
-    background: #eee;
-    height: 40px;
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
-    margin-top: 5px;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  .cm_ly_pop_tp .form_box .input_design:focus {
-    color: #000;
-    background-color: #fafafa;
-  }
-  .cm_ly_pop_tp .form_box .input_design:first-of-type {
-    margin-top: 0;
-  }
-  .cm_ly_pop_tp .form_box .textarea_design {
-    background: #eee;
-    line-height: 16px;
-    width: 100%;
-    height: 100px;
-    border-radius: 5px;
-    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
-    border: 0;
-    padding: 10px;
-  }
-  .cm_ly_pop_tp .form_box .textarea_design:focus {
-    color: #000;
-    background-color: #fafafa;
-  }
-  .cm_ly_pop_tp .form_box .select_design {
-    float: left;
-    padding: 0 10px;
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    height: 45px;
-  }
-  .cm_ly_pop_tp .cm_bottom_button {
-    margin: 0 10px 10px 10px;
-  }
-
-  /* 부분취소 상품정보 추가 2015-06-29 */
-  .cm_ly_pop_tp .this_item {
-    overflow: hidden;
-    position: relative;
-    padding: 10px;
-    padding-top: 0;
-    border-bottom: 1px solid #ddd;
-    min-height: 110px;
-    box-sizing: border-box;
-  }
-  .cm_ly_pop_tp .this_item .thumb {
-    width: 90px;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    overflow: hidden;
-  }
-  .cm_ly_pop_tp .this_item .thumb img {
-    width: 100%;
-    float: left;
-  }
-  .cm_ly_pop_tp .this_item .info {
-    margin-left: 100px;
-  }
-  .cm_ly_pop_tp .this_item .info dt {
-    color: #333;
-    font-weight: 600;
-    letter-spacing: -0.5px;
-    font-size: 14px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-  }
-  .cm_ly_pop_tp .this_item .info dd {
-    margin-top: 5px;
-    color: #999;
-  }
-  .cm_ly_pop_tp .this_item .info_title {
-    color: #ff6600;
-    font-weight: 600;
-    margin-bottom: 5px;
-    font-size: 14px;
-    letter-spacing: -1px;
-  }
-  .cm_ly_pop_tp .this_item .info_price {
-    margin-top: 10px;
-    border-top: 1px dashed #ddd;
-    padding-top: 10px;
-    overflow: hidden;
-  }
-  .cm_ly_pop_tp .this_item .info_price .txt {
-    display: block;
-    color: #666;
-    font-size: 13px;
-  }
-
-  .cm_board_form {
-  }
-  .cm_board_form li {
-    list-style: none;
-    position: relative;
-    border-bottom: 1px solid #dedede;
-    width: 100%;
-    clear: both;
-  }
-  .cm_board_form .opt {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    color: #888;
-    padding-left: 12px;
-    margin-top: -6px;
-  }
-  .cm_board_form .opt {
-    background: transparent
-      url("http://www.saemip.com/pages/images/cm_images/member_form_bullet.png")
-      left center no-repeat;
-    background-size: 8px;
-  }
-  .cm_board_form .value {
-    margin-left: 95px;
-    background: #fff;
-    overflow: hidden;
-    padding: 10px 10px;
-    line-height: 15px;
-    font-size: 12px;
-    color: #aaa;
-    letter-spacing: -0.5px;
-    overflow: hidden;
-  }
-  .cm_board_form .ess .opt {
-    background-image: url("http://www.saemip.com/pages/images/cm_images/member_form_bullet2.png");
-  }
-  .cm_board_form .input_design {
-    box-sizing: border-box;
-    float: left;
-    width: 100%;
-    background: #f1f1f1;
-    border: 1px solid #c1c1c1;
-    border-right: 0;
-    border-bottom: 0;
-    height: 35px;
-    padding: 0 10px;
-    color: #666;
-    border-radius: 5px;
-    letter-spacing: 0px;
-    font-size: 13px;
-  }
-  .cm_board_form .input_design:focus {
-    background-color: #ddd;
-    color: #333;
-  }
-  .cm_board_form .input_design + .input_design {
-    margin-top: 5px;
-  }
-  .cm_board_form .textarea_design {
-    background: #f1f1f1;
-    border: 1px solid #c1c1c1;
-    border-right: 0;
-    border-bottom: 0;
-    line-height: 18px;
-    height: 140px;
-    padding: 10px;
-    color: #666;
-    border-radius: 5px;
-    font-size: 13px;
-    box-sizing: border-box;
-  }
-  .cm_board_form .textarea_design:focus {
-    background-color: #ddd;
-    color: #333;
-  }
-  .cm_board_form label {
-    overflow: hidden;
-    float: left;
-    line-height: 21px;
-    padding: 5px 10px 5px 0;
-  }
-  .cm_board_form .editor .opt {
-    position: relative;
-    margin-top: 10px;
-  }
-  .cm_board_form .editor .value {
-    margin: 0;
-  }
-  .cm_board_form .tip_txt {
-    clear: both;
-    padding-top: 5px;
-  }
-  .cm_board_form .tip_txt dd {
-    line-height: 15px;
-    color: #999;
-    font-size: 11px;
-  }
-  .cm_board_form .tip_txt dt {
-    line-height: 15px;
-    color: #ff4949;
-    font-size: 11px;
-  }
-  .cm_board_form .input_date {
-    background: #f1f1f1
-      url("http://www.saemip.com/pages/images/cm_images/ic_date.png") 40px
-      center no-repeat;
-    background-size: 15px;
-    padding-left: 65px;
-  }
-  .cm_board_form .input_wrap {
-    position: relative;
-    overflow: hidden;
-  }
-  .cm_board_form .input_wrap .upper_txt {
-    position: absolute;
-    left: 10px;
-    top: 0;
-    line-height: 35px;
-  }
-  .cm_board_form .input_wrap + .input_wrap {
-    margin-top: 5px;
-  }
-
-  .cm_board_form .btn_photo_box {
-    background: #4f515b;
-    overflow: hidden;
-    position: relative;
-    border-radius: 5px;
-    padding: 0;
-    text-align: center;
-    height: 45px;
-  }
-  .cm_board_form .btn_photo_box {
-    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.2);
-    display: block;
-    width: 100%;
+/* horiz */
+@media screen and (max-width: 340px) {
+  .item_list .info_box {
+    padding: 0 !important;
+  }
+  .item_list .title_box {
     float: none;
-  }
-  .cm_board_form .btn_photo_box .upper_txt {
-    background: transparent
-      url("http://www.saemip.com/pages/images/cm_images/input_photo.png") left
-      2px no-repeat;
-    background-size: 18px;
-    color: #fff;
-    padding-left: 24px;
-    margin: 12px 0;
-    font-size: 13px;
-  }
-  .cm_board_form .input_photo {
-    color: transparent;
-    background: transparent;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 555;
-    visibility: hidden;
-  }
-  .cm_board_form .img_preview {
-    width: 100% !important;
-  }
-  .cm_board_form .photo_box {
-    margin: 5px 0 0 0;
-    overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    padding: 5px;
-  }
-  .cm_board_form .photo_box img {
-    width: 100%;
-    float: left;
-  }
-  .cm_board_form .photo_box .photo_inner {
-    background: rgba(0, 0, 0, 0.05)
-      url("http://www.saemip.com/pages/images/cm_images/input_photo_none.png")
-      center center no-repeat;
-    background-size: 40px;
-    min-height: 120px;
-    overflow: hidden;
-    border-radius: 5px;
-  }
-  .cm_board_form .btn_photo_del {
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-
-  .button_pack {
-    display: block;
-    box-sizing: border-box;
-  }
-  .button_pack a,
-  .button_pack input,
-  .button_pack button {
-    width: 100%;
-    text-align: center;
-    background-image: none;
-    position: relative;
-    display: block;
-    font-weight: normal;
-    word-wrap: normal;
-    word-break: keep-all;
-    border-radius: 3px;
-    box-sizing: border-box;
-  }
-
-  .button_pack .btn_sm_white,
-  .button_pack .btn_sm_black,
-  .button_pack .btn_sm_color {
-    font-size: 12px;
-    height: 25px;
-    line-height: 23px;
-    padding: 0 10px;
-  }
-  .button_pack .btn_sm_white {
-    background: #fff;
-    color: #333 !important;
-    border: 1px solid #ccc;
-  }
-  .button_pack .btn_sm_black {
-    background: #505258;
-    color: #fff !important;
-    border: 1px solid #505258;
-  }
-  .button_pack .btn_sm_color {
-    background: #fb5074;
-    color: #fff !important;
-    border: 1px solid #fb5074;
-  }
-
-  .button_pack .btn_md_white,
-  .button_pack .btn_md_black,
-  .button_pack .btn_md_color {
-    font-size: 13px;
-    height: 35px;
-    line-height: 33px;
-    padding: 0 10px;
-  }
-  .button_pack .btn_md_white {
-    background: #fff;
-    color: #333 !important;
-    border: 1px solid #ccc;
-  }
-  .button_pack .btn_md_black {
-    background: #505258;
-    color: #fff !important;
-    border: 1px solid #505258;
-  }
-  .button_pack .btn_md_color {
-    background: #fb5074;
-    color: #fff !important;
-    border: 1px solid #fb5074;
-  }
-
-  .button_pack .btn_lg_white,
-  .button_pack .btn_lg_black,
-  .button_pack .btn_lg_color {
-    font-size: 16px;
-    height: 50px;
-    line-height: 47px;
-    padding: 0 10px;
-  }
-  .button_pack .btn_lg_white {
-    background: #fff;
-    color: #333 !important;
-    border: 1px solid #ccc;
-  }
-  .button_pack .btn_lg_black {
-    background: #505258;
-    color: #fff !important;
-    border: 1px solid #505258;
-  }
-  .button_pack .btn_lg_color {
-    background: #1f701c;
-    color: #fff !important;
-    border: 1px solid #1f701c;
-  }
-
-  /* ●●●●● 상품옵션 띄우기 2015-09-30  */
-
-  .view_float_option {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-
-  .view_float_option .closed {
-  }
-  .view_float_option .closed .box {
-    background: #ffffff;
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border-top: 1px solid #acacac;
     overflow: hidden;
   }
-
-  .view_float_option .btn_open {
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 80px;
-    margin: -25px 0 0 -40px;
-  }
-  .view_float_option .btn_open img {
-    width: 100%;
-    margin: 1px 0 0 0;
-  }
-  .view_float_option .btn_open_tx {
-    background: #1f701c;
-    text-align: center;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: -1px;
-    display: block;
-    height: 40px;
-    line-height: 40px;
-  }
-
-  .view_float_option .open {
-    display: none;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    color: #fff;
-  }
-  .view_float_option .open .box {
-    background: #ffffff;
-    height: 100%;
-    padding: 6px;
-    box-sizing: border-box;
-    border-top: 1px solid #acacac;
-  }
-  .view_float_option .open a {
-    color: #fff;
-    display: block;
-  }
-  .view_float_option .open .title {
-    color: #fff;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: -1px;
-    padding: 5px 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .view_float_option .open .exp {
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .view_float_option .btn_close {
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 80px;
-    margin: -25px 0 0 -40px;
-  }
-  .view_float_option .btn_close img {
-    width: 100%;
-    margin: 1px 0 0 0;
-  }
-
-  .view_float_option .opt_float {
-    padding: 10px 0 0 0;
-    overflow: hidden;
-  }
-  .view_float_option .opt_float .select {
-    border: none;
-    height: 30px;
-  }
-  .view_float_option .opt_float .select select {
-    height: 30px;
-    line-height: 30px;
+  .item_list .title_box .tit_box {
     padding: 0;
-  }
-  .view_float_option .opt_float .select {
-    height: 40px;
-    overflow: hidden;
-    position: relative;
-    border: 1px solid #d4d4d4;
-    background: #fff;
-    margin-bottom: 3px;
-    box-sizing: border-box;
-  }
-  .view_float_option .opt_float .select:only-of-type {
-    margin-bottom: 0;
-  }
-  .view_float_option .opt_float .select select {
-    width: 100%;
-    height: 40px;
-    border: none;
-    color: #333;
-    text-indent: 10px;
-    letter-spacing: -1px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    -webkit-appearance: none;
-    background: transparent;
-  }
-  .view_float_option .opt_float .select .ic_arrow {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    border-left: 1px solid #e3e3e3;
-    margin-top: -15px;
-    background: transparent
-      url("http://www.saemip.com/pages/images/select_arrow.png") center center
-      no-repeat;
-    background-size: 12px;
-  }
-
-  .view_float_option .opt_list {
-    background: #fff;
-    overflow: auto;
-    height: 100px;
-    border-radius: 5px;
-    padding: 5px;
-  }
-  .view_float_option .opt_list li {
-    position: relative;
-    overflow: hidden;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 6px;
-    list-style: none;
-    min-height: 30px;
-  }
-  .view_float_option .opt_list li:last-child {
-    border-bottom: none;
-  }
-  .view_float_option .opt_list .name {
-    display: inline-block;
-    margin-right: 115px;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: -1px;
-  }
-  .view_float_option .opt_list .name b {
-    color: #000;
-    font-weight: normal;
-  }
-
-  .view_float_option .updown {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    margin-top: -14px;
-  }
-  .view_float_option .updown a {
-    width: 25px;
-    height: 26px;
-    line-height: 24px;
-    text-align: center;
-    float: left;
-    margin: 0 1px;
-    background: #e9e9e9;
-    font-family: helvetica;
-    font-size: 23px;
-    color: #333;
-  }
-  .view_float_option .updown a:last-child {
-    color: #fc5b9f;
-  }
-  .view_float_option .updown input {
-    width: 30px;
-    padding: 0 5px;
-    text-align: center;
-    line-height: 26px;
-    height: 26px;
-    box-sizing: border-box;
-    float: left;
-    color: #000;
-    border: 1px solid #ccc;
-  }
-
-  .view_float_option .sum_float {
-    text-align: right;
-    font-size: 14px;
-    padding: 5px 0;
-    color: #000000;
-    font-weight: bold;
-  }
-  .view_float_option .sum_float b {
-    font-size: 24px;
-    color: #1f701c;
-    font-family: helvetica;
-  }
-
-  .view_float_option .btn_area_float {
-    margin: 5px 0;
-    overflow: hidden;
-    position: relative;
-  }
-  .view_float_option .btn_area_float a {
-    height: 45px;
-    line-height: 45px;
-    font-weight: bold;
-    color: #fff;
-    font-size: 18px;
-    text-align: center;
-    border-radius: 0px;
-    display: block;
-    box-sizing: border-box;
-  }
-  .view_float_option .btn_area_float .btn_order {
-    background: #1f701c;
-    color: #fff;
-    margin: 0 95px;
-  }
-  .view_float_option .btn_area_float .btn_cart {
-    background: #fc5b9f;
-    color: #fff;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 90px;
-  }
-  .view_float_option .btn_area_float .btn_wish {
-    background: #fff;
-    border: 1px solid #1f701c;
-    color: #1f701c;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 90px;
-  }
-
-  .view_float_option .wrap_select .txt_box {
-    display: none;
-  }
-  .view_float_option .btn_add {
-    letter-spacing: -1px;
-    font-size: 15px;
-    color: #fff;
-    text-align: center;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 5px;
-    background: #ff4e00;
-    padding: 10px;
-    margin: 5px 0 10px 0;
-  }
-
-  .view_float_option .coupon_area {
-    clear: both;
-    text-align: center;
-    padding: 5px 0;
-  }
-  .view_float_option .coupon_area .coupon {
-    background: #fff;
-    border: 2px solid #ea3136;
-    color: #ea3136;
-    line-height: 30px;
-    height: 30px;
-    padding: 0 8px 0 0;
-    letter-spacing: -0.5px;
-    overflow: hidden;
-  }
-  .view_float_option .coupon_area .coupon b {
-    background: #ea3136;
-    color: #fff;
-    line-height: 30px;
-    height: 30px;
-    display: inline-block;
-    padding: 0 10px 0 8px;
-    margin-right: 8px;
-    float: left;
-  }
-  .view_float_option .coupon_area .coupon_ok {
-    background: #ddd;
-    color: #333;
-    border: 2px solid #333;
-  }
-  .view_float_option .coupon_area .coupon_ok b {
-    background: #333;
-  }
-
-  .view_float_open .open {
-    display: block;
-  }
-  .view_float_open .closed {
-    display: none;
-  }
-
-  /* 2015-11-27 메인타이틀 추가 */
-  .new_main_title {
-    clear: both;
-    padding: 15px 10px 10px 10px;
-    overflow: hidden;
-    border-bottom: 2px solid #333;
-  }
-  .new_main_title .title_box {
-    overflow: hidden;
-  }
-  .new_main_title .first_txt {
-    color: #1f701c;
-    float: left;
-    font-size: 21px;
-    font-weight: 600;
-    letter-spacing: -1px;
-  }
-  .new_main_title .first_txt strong {
-    color: #000;
-  }
-  .new_main_title .second_txt {
-    float: left;
-    font-size: 12px;
-    letter-spacing: -0.5px;
-    margin: 11px 0 0 5px;
-    color: #4d4d4d;
-  }
-
-  /* 2015-11-27 네비 추가 */
-  .new_nav {
-    background: #1f701c;
-    overflow: hidden;
-  }
-  .new_nav .inner_box {
-    display: table;
-    width: 100%;
-    text-align: center;
-  }
-  .new_nav .inner_box ul {
-    display: table-row;
-  }
-  .new_nav .inner_box li {
-    display: table-cell;
-    width: 1%;
-  }
-  .new_nav .inner_box .menu {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500;
-    height: 45px;
-    line-height: 45px;
-    display: block;
-    letter-spacing: -0.5px;
-  }
-  .new_nav .inner_box .menu .txt {
-    color: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    height: 45px;
-    line-height: 45px;
-    display: inline-block;
-    padding: 0 5px;
-    box-sizing: border-box;
-  }
-  .new_nav .inner_box .hit .txt {
-    border-bottom: 4px solid #1f701c;
-  }
-
-  /* 2016-08-17 비포애프터 */
-  .new_beafter {
-    overflow: hidden;
-    padding: 10px;
-    background: #4d505d;
-    margin: 20px 0;
-  }
-  .new_beafter .beafter_title {
-    text-align: center;
-    background: #4d505d;
-    color: #fc5b9f;
-    font-size: 19px;
-    padding: 0 10px 10px 10px;
-    font-weight: 600;
-  }
-  .new_beafter .beafter_conts {
-    background: #fff;
-    padding: 10px;
-  }
-
-  /* 2016-09-05 요청에 의한 네비 변경 */
-  .new_nav .inner_box .menu .txt {
-    font-size: 12px;
-    letter-spacing: 0px;
-  }
-
-  /* 2016-09-19 따라다니는 해더 SSJ */
-  #float_header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    z-index: 300;
-    border-bottom: 1px solid #eee;
-  }
-  .float_tab {
-    position: fixed;
-    top: 80px;
-    left: 0;
-    z-index: 300;
-  }
-
-  /* 맞춤제작_상품후기 */
-  .board_epilogue {
-    overflow: hidden;
-  }
-  .board_epilogue .top_bn {
-    overflow: hidden;
-  }
-  .board_epilogue .top_bn img {
-    float: left;
-    width: 100%;
-  }
-  .board_epilogue .epi_list {
-    overflow: hidden;
-  }
-  .board_epilogue .epi_list .posting {
-    overflow: hidden;
-  }
-  .board_epilogue .epi_list li {
-    border-bottom: 1px solid #d4d4d4;
-    text-align: center;
-    padding: 0 10px 10px;
-    position: relative;
-    overflow: hidden;
-    min-height: 90px;
-  }
-
-  .board_epilogue .epi_list .goods {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    width: 80px;
-    box-sizing: border-box;
-  }
-  .board_epilogue .epi_list .goods .img {
-    border-radius: 10px;
-  }
-  .board_epilogue .epi_list .goods img {
-    width: 100%;
-    border-radius: 10px;
-  }
-
-  .board_epilogue .epi_list .txt_box {
-    margin-left: 80px;
-  }
-
-  .board_epilogue .epi_list .content {
-    padding: 10px 10px 0 10px;
-    text-align: left;
-  }
-  .board_epilogue .epi_list .content .name {
-    overflow: hidden;
-    height: 28px;
-    position: relative;
-  }
-  .board_epilogue .epi_list .content .upper_link {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-  }
-
-  .board_epilogue .epi_list .content .title {
-    max-width: 88%;
-    font-size: 14px;
-    color: #000;
-    line-height: 28px;
-    height: 28px;
-    float: left;
-  }
-  .board_epilogue .epi_list .content .title {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-  }
-
-  .board_epilogue .epi_list .content .title_icon {
-    overflow: hidden;
-    float: left;
-    height: 20px;
-    margin-left: 5px;
-  }
-  .board_epilogue .epi_list .content .title_icon .img {
-    float: left;
-    margin-left: 3px;
-  }
-  .board_epilogue .epi_list .content .title_icon .img img {
-    width: 15px;
-    margin: 6px 0 0 0;
-  }
-
-  .board_epilogue .epi_list .content .review {
-    font-size: 12px;
-    color: #7f7f7f;
-    line-height: 17px;
-    padding-bottom: 10px;
-    word-wrap: break-word;
-    word-break: keep-all;
-  }
-
-  .board_epilogue .epi_list .btm_box {
-    overflow: hidden;
-    padding: 0 10px;
-  }
-
-  .board_epilogue .epi_list .mark_box {
-    overflow: hidden;
-    float: left;
-  }
-  .board_epilogue .epi_list .mark_box .mark {
-    background: transparent
-      url("http://www.saemip.com/pages/images/common/mark.png") left top repeat;
-    width: 65px;
-    height: 13px;
-    display: inline-block;
-    background-size: 65px;
-  }
-  .board_epilogue .epi_list .mark_box .star {
-    background: transparent
-      url("http://www.saemip.com/pages/images/common/mark.png") left bottom
-      repeat;
-    width: 100%;
-    height: 100%;
-    float: left;
-    background-size: 65px;
-  }
-  .board_epilogue .epi_list .writer {
-    float: right;
-  }
-  .board_epilogue .epi_list .writer .id {
-    float: left;
-    font-size: 12px;
-    color: #000;
-    margin: 0 5px 0 0;
-  }
-  .board_epilogue .epi_list .writer .date {
-    float: left;
-    font-size: 11px;
-    color: #8c8c8c;
-    display: block;
-  }
-
-  /* 작은화면 */
-  @media screen and (max-width: 350px) {
-    .board_epilogue .epi_list .writer .id {
-      float: none;
-      display: block;
-    }
-    .board_epilogue .epi_list .writer .date {
-      float: none;
-      display: block;
-    }
-  }
-
-  .board_epilogue .board_head {
-    background: #f7f7f7;
-    color: #444;
-  }
-  .board_epilogue .board_head .posting_hd {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-  }
-  .board_epilogue .board_head .content {
-    text-align: center;
-    margin-top: 0;
-  }
-  .board_epilogue .board_head .mark_box {
-    position: relative;
-    top: 0;
-    margin-top: 0;
-    right: 0;
-    height: auto;
-  }
-  .board_epilogue .board_head .writer {
-    position: relative;
-    top: 0;
-    margin-top: 0;
-  }
-
-  /* 맞춤제작_상품문의 */
-  .board_epilogue.board_answer .open_reply {
-    background: #f3f3f3
-      url("http://www.saemip.com/pages/images/new_ic_reply.png") 21px 13px
-      no-repeat;
-    overflow: hidden;
-    padding: 13px 0;
-    background-size: 20px;
-    margin-top: 10px;
-    text-align: left;
-  }
-  .board_epilogue.board_answer .open_reply .txt {
-    font-size: 12px;
-    color: #7d7d7d;
-    padding: 0 10px 0 60px;
-    word-wrap: break-word;
-    word-break: keep-all;
-  }
-  .board_epilogue.board_answer .open_reply .writer {
-    float: left;
-    padding-left: 60px;
-    margin-top: 5px;
-  }
-
-  /* 2016-09-25 좌측슬라이드배너 SSJ */
-  .banner_slide {
-    overflow: hidden;
-  }
-  .banner_slide a {
-    display: block;
-    overflow: hidden;
-    float: left;
-    width: 100%;
-    margin-bottom: 0px;
-  }
-  .banner_slide img {
-    width: 100%;
-    float: left;
-  }
-  .banner_slide.double {
-    display: inline-block;
     width: 50%;
     float: left;
-    box-sizing: border-box;
-    padding: 0 2px 0 0;
-  }
-  .banner_slide.double + .double {
-    padding: 0 0 0 2px;
-  }
-  .banner_slide.double + a {
-    clear: both;
-  }
-
-  .slide_sitemap .btn_logout {
-    display: block;
     text-align: center;
-    margin-top: 3px;
-    box-sizing: border-box;
-    overflow: hidden;
-    padding: 10px;
-    background: #fff;
   }
-  .slide_sitemap .btn_logout .btn {
-    display: block;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 10px;
-    letter-spacing: -1px;
-    color: rgba(0, 0, 0, 0.5);
+  .item_list .title_box .tit {
+    padding-left: 23px;
+    padding-right: 5px;
   }
-
-  /* 페이지네이트 ------------------------------ */
-  #container_shop .paginate {
+  .item_list .title_box .man .tit {
+    color: #2d82be;
+    background: transparent url("http://www.saemip.com/m/images/ic_man.png") 3px
+      center no-repeat !important;
+    background-size: 16px !important;
+  }
+  .item_list .title_box .woman .tit {
+    color: #e23354;
+    background: transparent url("http://www.saemip.com/m/images/ic_woman.png")
+      3px center no-repeat !important;
+    background-size: 16px !important;
+  }
+  .item_list .price_box {
+    float: none;
     text-align: center;
-    margin: 20px 0;
   }
-  #container_shop .paginate .inner {
-    display: inline-block;
-  }
-  #container_shop .paginate a {
-    display: inline-block;
-    position: relative;
-    padding: 0 15px;
-    height: 35px;
-    line-height: 35px;
-    border: 1px solid #d1d1d1;
-    float: left;
-    margin: 0 1px;
-    font-family: helvetica;
-    font-size: 15px;
-    background: #fff;
-  }
-
-  #container_shop .paginate .on {
-    background: #4d5058;
-    border: 1px solid #454951;
-    color: #fff;
-  }
-
-  #container_shop .paginate .ic_prev {
-    background-position: -120px -30px;
-    width: 10px;
-    height: 15px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -7px 0 0 -5px;
-  }
-  #container_shop .paginate .ic_next {
-    background-position: -130px -30px;
-    width: 10px;
-    height: 15px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -7px 0 0 -5px;
-  }
-
-  /* 2016-09-28 추가작업 */
-  .item_box .review_info {
-    position: absolute;
-    right: 10px;
-    bottom: 7px;
-  }
-  .item_box .icon {
-    float: left;
-    background: none;
-    margin-top: 1px;
-  }
-  .item_box .icon img {
-    width: 13px;
-  }
-  .item_box b {
-    font-size: 12px;
-    color: #999;
-    margin: 0 0 0 3px;
-  }
-
-  .new_location {
-    overflow: hidden;
-    padding: 5px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    margin-left: 5px;
-    overflow-y: hidden;
-  }
-  .new_location ul {
-    display: inline-block;
-  }
-  .new_location li {
-    float: left;
-    position: relative;
-  }
-  .new_location li:before {
-    content: "";
-    position: absolute;
-    left: -1px;
-    top: 50%;
-    margin-top: -5px;
-    width: 1px;
-    height: 9px;
-    background: #ddd;
-  }
-  .new_location li:first-child:before {
-    display: none;
-  }
-  .new_location .btn {
+  .item_list .price_box ul {
     display: block;
-    font-size: 12px;
-    color: #555;
-    padding: 5px 10px 4px;
   }
-  .new_location .hit {
-    border: 1px solid #1f701c;
-    border-radius: 2px;
-  }
-  .new_location .hit:before {
-    display: none;
-  }
-  .new_location .hit + li:before {
-    display: none;
-  }
-
-  .slide_menu {
-    background: #fff;
-  }
-
-  /* 2017-02-23 LDD 모바일 해당의원에서 진행중인 이벤트 */
-  .view_relative .item_box .price {
-    overflow: hidden;
-    position: absolute;
-    left: 10px;
-    bottom: 10px;
-  }
-  .view_relative .item_box .price .before {
-    float: left;
-    margin: 5px 0 0 0;
-    overflow: hidden;
-    line-height: 1;
-  }
-  .view_relative .item_box .price .before_price {
-    color: #999;
-    font-size: 13px;
-    position: relative;
-    padding: 0 3px;
-    float: left;
-    line-height: 1;
-  }
-  .view_relative .item_box .price .before_price:before {
-    content: "";
-    background: #999;
+  .item_list .price_box li {
+    float: none;
+    text-align: center;
     width: 100%;
-    height: 1px;
-    position: absolute;
-    left: 0;
-    top: 50%;
   }
-  .view_relative .item_box .price .before .unit {
-    display: none;
-  }
-
-  .view_relative .item_box .price .after {
-    float: center;
-    overflow: hidden;
-    line-height: 1.1;
-  }
-  .view_relative .item_box .price .after_price {
-    color: #fd5ba0;
-    font-size: 13px;
-    float: center;
-  }
-  .view_relative .item_box .price .after .unit {
-    color: #fd5ba0;
-    font-size: 14px;
-    line-height: 1.1;
-  }
-
-  .view_relative {
-    overflow: hidden;
-    padding: 20px 0 10px 0;
-    background: #fff;
-  }
-  .view_relative .relative_title {
-    text-align: center;
-    position: relative;
-    margin: 0 0 10px 0;
-  }
-  .view_relative .relative_title .txt {
-    color: #000;
-    font-size: 17px;
-    position: relative;
-    padding: 0 10px;
-    height: 29px;
-    position: relative;
-    font-family: "NanumSquare";
-  }
-  .view_relative .relative_title .txt strong {
-    font-weight: 400;
-    color: #fd5ba0;
-  }
-
-  .view_relative .best_item {
-    overflow: hidden;
-    box-sizing: border-box;
-    text-align: center;
-    position: relative;
-    margin: 0 10px;
-  }
-  .view_relative .best_item ul {
-    display: inline-block;
-  }
-  .view_relative .best_item li {
+  .item_list .price_box .info {
     float: left;
-    box-sizing: border-box;
+    width: 50%;
     padding: 0 5px;
-    list-style: none;
-    width: 33.333333%;
-  }
-  .view_relative .best_item .item_box {
-  }
-  .view_relative .item_box .thumb {
-    border: 1px solid #e1e2e6;
     box-sizing: border-box;
   }
-  .view_relative .item_box .item_name {
-    text-align: center;
-    font-size: 11px;
+  .item_list .price_box .num_box {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
     padding: 0;
-    margin-top: 0;
-    line-height: 12px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-  }
-  .view_relative .item_box .info {
-    padding: 5px;
-    background: #fff;
-    border: 1px solid #e1e2e6;
-    border-top: 0;
-    box-sizing: border-box;
-    height: 50px;
-  }
-
-  /* 가로형 */
-  @media screen and (min-width: 550px) {
-    .view_relative .best_item li {
-      width: 25%;
-    }
-  }
-
-  .view_relative .item_box .price {
-    bottom: 3px;
-    left: 5px;
-  }
-  .view_relative .item_box .before {
-    margin: 0 0 0 0;
-  }
-  .view_relative .item_box .before_price {
-    font-size: 11px;
-    line-height: 10px;
-  }
-  .view_relative .item_box .after {
-    margin: -1px 0 0 4px;
-  }
-  .view_relative .item_box .after_price {
-    font-size: 11px;
-  }
-  .view_relative .item_box .after .unit {
-    font-size: 11px;
-  }
-  .view_relative .item_box .real_img {
-    padding: 10px;
-  }
-
-  .view_relative .prevnext {
-    position: absolute;
-    top: 50px;
-    text-align: center;
-    z-index: 10;
-  }
-  .view_relative .prevnext img {
-    height: 13px;
-  }
-  .view_relative .prev {
-    left: -5px;
-  }
-  .view_relative .next {
-    right: -5px;
-  }
-  .view_relative .prevnext a {
-    padding: 5px;
-  }
-  .view_relative .prevnext .icon {
-    position: relative;
-    width: 25px;
-    height: 25px;
-    border-radius: 100px;
-    background: #4b4f5b;
-  }
-  .view_relative .prevnext.prev .icon:before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    border: 1px solid #fff;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    position: absolute;
-    top: 7px;
-    border-top: 0;
-    border-right: 0;
-    left: 10px;
-  }
-  .view_relative .prevnext.next .icon:before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    border: 1px solid #fff;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    position: absolute;
-    top: 7px;
-    border-bottom: 0;
-    border-left: 0;
-    right: 8px;
-  }
-
-  .view_relative .rolling_icon {
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    margin-top: 10px;
-  }
-  .view_relative .rolling_icon .lineup {
-  }
-  .view_relative .rolling_icon .icon {
-    float: left;
-    width: 6px;
-    height: 6px;
-    background: rgba(0, 0, 0, 0.2);
-    margin-left: 3px;
-    border-radius: 100px;
-  }
-  .view_relative .rolling_icon .active {
-    background: rgba(0, 0, 0, 0.7);
-  }
-
-  .view_relative .real_img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  .view_relative .real_img img {
-    float: left;
-    width: 100%;
-  }
-  .view_relative .fake_img {
-    overflow: hidden;
-  }
-  .view_relative .fake_img img {
-    float: left;
-    width: 100%;
-  }
-
-  .view_relative .item_box {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    min-height: 150px;
-  }
-  .view_relative .item_box .thumb {
-    /*overflow:hidden;*/
-    position: relative;
-    background: #fff url("/m/images/none_thumb_l.png") center center no-repeat;
-    background-size: 35px;
-  }
-  .view_relative .item_box .upper_ic {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 3;
-  }
-  .view_relative .item_box .upper_ic img {
-    float: left;
-    height: 15px;
-  }
-  .view_relative .item_box .upper_ic_ess {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 3;
-    overflow: hidden;
-  }
-  .view_relative .item_box .upper_ic_ess img {
-    float: left;
-  }
-
-  /* 뒤로버튼 추가 2017-08-21 ARA */
-  .top_header .btn_back {
-    background: transparent
-      url("http://www.saemip.com/pages/images/header_back.png") center center
-      no-repeat;
-    background-size: 30px;
-  }
-
-  /* 비회원글쓰기 약관동의 2017-08-23 SSJ */
-  .cm_step_agree {
-    overflow: hidden;
-    background: #fafafa;
-    padding: 0px 8px 5px 8px;
-  }
-  .cm_step_agree .text_box {
-    background: #fff;
-    border: 1px solid #ccc;
-    overflow: hidden;
-  }
-  .cm_step_agree .textarea_design {
-    background: #fff;
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    line-height: 16px;
-    height: 80px;
-    color: #999;
-    font-size: 11px;
-  }
-  .cm_step_agree textarea {
-    background: #fff;
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    line-height: 16px;
-    height: 80px;
-    color: #999;
-    font-size: 11px;
-  }
-  .cm_step_agree .agree_check {
-    overflow: hidden;
-    position: relative;
-    text-align: left;
-  }
-  .cm_step_agree .agree_check label {
-    padding: 10px 0;
-    overflow: hidden;
-    color: #555;
-    font-size: 13px;
-  }
-
-  /* 회원가입시 만 14세미만 가입제한 문구 2017-08-30 SSJ */
-  .age_info {
-    margin-top: 10px;
-    margin-bottom: 10px;
     text-align: center;
   }
-
-  /*  //  LCY 2018-02-21 -- 게시판 추가 */
-  .file_thumb[data-list-type="event2"] img {
-    max-width: 296px;
-    max-height: 180px;
-  }
-  .file_thumb[data-list-type="news"] img {
-    max-width: 170px;
-    max-height: 120px;
-  }
-  .file_thumb input[type="checkbox"] {
-  }
-
-  /* {{{이벤트분류설정}}}  */
-  .event_info {
-  }
-  .event_info a {
-    color: #1f701c;
+  .item_list .price_box .number {
+    padding: 0;
+    margin-left: 0;
+    font-size: 12px;
   }
 }
 
+/* .minishop_item_list .item_box .info_box .add_txt {color:#999;}
+.minishop_item_list .item_box .info_box .item_title {font-size:15px; color:#000; letter-spacing:-0.5px; font-weight:600;}
+.minishop_item_list .item_box .info_box {padding-bottom:0}
+.item_list .detail_price {overflow:hidden; margin:14px 0px 0px;}
+.item_list .detail_price .table {display:table; width:100%; margin-top:-1px; table-layout:fixed;}
+.item_list .detail_price ul {display:table-row;}
+.item_list .detail_price li {list-style:none; display:table-cell; vertical-align:middle; padding:7px 0; border-top:1px solid #eee; border-bottom:0;}
+.item_list .detail_price .tit_box {width:55px;}
+.item_list .detail_price .tit {font-size:13px; letter-spacing:-0.5px; font-weight:600; padding-left:27px; }
+.item_list .detail_price .man .tit {color:#2d82be; background:transparent url('http://www.saemip.com/m/images/ic_man.png') 3px center no-repeat; background-size:16px;}
+.item_list .detail_price .woman .tit {color:#e23354; background:transparent url('http://www.saemip.com/m/images/ic_woman.png') 3px center no-repeat; background-size:16px;}
+.item_list .detail_price .price_box {text-align:right; padding-right:10px}
+.item_list .detail_price .price_box .info {display:inline-block;}
+.item_list .detail_price .price_box strong {float:left; font-size:15px; font-weight:600;}
+.item_list .detail_price .man .price_box strong {color:#2d82be;}
+.item_list .detail_price .woman .price_box strong {color:#e23354;}
+.item_list .detail_price .price_box em {float:left; color:#999; font-size:15px;}
+.item_list .detail_price .num {text-align:right; }
+.item_list .detail_price .num_box {display:block; position:relative;}
+.item_list .detail_price .num_box:before {content:""; position:absolute; left:-1px; top:50%; width:1px; height:12px; background:#ddd; margin-top:-5px}
+.item_list .detail_price .number {font-size:13px; color:#999; padding-left:10px; margin-left:1px; box-sizing:border-box; }
+.item_list .detail_price .num strong {color:#000; font-weight:400;}
+
+horiz
+@media screen and (max-width:410px) {
+.item_list .detail_price .tit_box {width:30px;}
+.item_list .detail_price .tit {background:none !important; padding-left:0}
+} */
+
+/* 에디터 Override */
+.editor {
+  background: transparent;
+  margin: 0;
+}
+.editor {
+  font-family: inherit;
+  color: inherit;
+  font-size: 12px;
+}
+.editor span,
+.editor b,
+.editor p,
+.editor em,
+.editor strong,
+.editor div {
+  color: inherit;
+}
+.editor p {
+  margin: 0;
+  padding: 0;
+}
+.editor ul,
+.editor ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 1em;
+  margin-left: 0;
+}
+.editor ol,
+.editor ol li {
+  list-style-type: decimal;
+  list-style-position: inside;
+  padding-left: 1em;
+  margin-left: 0;
+}
+.editor span {
+  display: inline;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+.editor em {
+  font-style: italic;
+}
+.editor b {
+  font-weight: bold;
+}
+.editor strong {
+  font-weight: bold;
+}
+.editor img {
+  max-width: 100% !important;
+}
+.editor table {
+  margin: inherit;
+  padding: inherit;
+  border: inherit;
+  border-collapse: collapse;
+  border-spacing: inherit;
+  background-image: inherit;
+  border-color: inherit;
+}
+.editor td {
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.editor div,
+.editor img {
+  max-width: 100% !important;
+}
+
+.editor_content {
+  background: transparent;
+  min-height: 130px;
+  padding: 10px;
+  margin: 0;
+}
+.editor_content {
+  font-family: inherit;
+  color: inherit;
+  font-size: 12px;
+}
+.editor_content span,
+.editor_content b,
+.editor_content p,
+.editor_content em,
+.editor_content strong,
+.editor_content div {
+  color: inherit;
+}
+.editor_content p {
+  margin: 0;
+  padding: 0;
+}
+.editor_content ul,
+.editor_content ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 1em;
+  margin-left: 0;
+}
+.editor_content ol,
+.editor_content ol li {
+  list-style-type: decimal;
+  list-style-position: inside;
+  padding-left: 1em;
+  margin-left: 0;
+}
+.editor_content span {
+  display: inline;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+.editor_content em {
+  font-style: italic;
+}
+.editor_content b {
+  font-weight: bold;
+}
+.editor_content strong {
+  font-weight: bold;
+}
+.editor_content img {
+  max-width: 100% !important;
+}
+.editor_content table {
+  margin: inherit;
+  padding: inherit;
+  border: inherit;
+  border-collapse: collapse;
+  border-spacing: inherit;
+  background-image: inherit;
+  border-color: inherit;
+}
+
+.editor_content div,
+.editor_content img {
+  max-width: 100% !important;
+}
+
+#container_sub .inner_board_form .textarea {
+  clear: both;
+  background: #fff !important;
+  border: 1px solid #fff;
+  overflow: hidden;
+  padding: 0;
+  -webkit-box-shadow: none;
+}
+#container_sub .inner_board_form .textarea textarea {
+  width: 100%;
+  padding: 10px;
+  min-height: 100px !important;
+  background: #eee !important;
+  webkit-box-shadow: inset 1px 1px 1px #797777;
+  border: none !important;
+  font-size: 12px !important;
+  color: #999;
+}
+#container_sub .inner_board_form .textarea textarea:focus {
+  color: #333;
+}
+
+/* 2015-04-14 메인 지역별 인기상품 추가 */
+.main_local_t {
+  overflow: hidden;
+  clear: both;
+  height: 43px;
+  background: #ff4011;
+  position: relative;
+}
+.main_local_t .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: -1px;
+  float: left;
+  line-height: 43px;
+  width: 120px;
+  text-align: center;
+  overflow: hidden;
+}
+.main_local_t .local {
+  position: relative;
+  margin: 3px 5px 0 120px;
+  overflow: hidden;
+}
+
+/* 셀렉트박스 */
+.main_local_t .more {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+}
+.main_local_t .more {
+  display: block;
+  height: 35px;
+  position: relative;
+  background: #fff;
+  box-sizing: border-box;
+}
+.main_local_t .ic {
+  float: left;
+  overflow: hidden;
+  margin: 8px;
+}
+.main_local_t .ic img {
+  float: left;
+  height: 18px;
+}
+.main_local_t .more .ic_more {
+  width: 10px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin: -4px 15px 0 0;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+.main_local_t .more .ic_more img {
+  float: left;
+  width: 15px;
+}
+.main_local_t .more select {
+  text-indent: 23px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 35px;
+  font-weight: bold;
+  line-height: 33px;
+  border: none;
+  color: #71ad2c;
+  font-size: 14px;
+  letter-spacing: -1px;
+  -webkit-appearance: none;
+}
+.main_local_t .more select {
+  /*background:#fff url('http://www.saemip.com/pages/images/main_local.png') left center no-repeat; background-size: 0 18px*/
+  background: transparent;
+}
+
+/* 정렬하기 */
+.select_sort {
+  float: right !important;
+  width: 80px !important;
+  margin-right: 5px !important;
+  border-radius: 30px !important;
+  background: #eee !important;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+.select_sort select {
+  padding-left: 5px !important;
+}
+
+/* ●●●●● 상품쿠폰관련 추가 2015-06-23 */
+
+/* 상품리스트 아이콘 */
+.coupon_list_upper {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  z-index: 1;
+}
+.coupon_list_upper img {
+  width: 35px;
+}
+
+/* 제품상세 쿠폰정보*/
+.coupon_view_icon {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.coupon_view_icon span {
+  line-height: 1.2;
+}
+.coupon_view_icon .white_box {
+  height: 55px;
+  padding: 10px;
+  float: left;
+  background: #fff;
+  box-sizing: border-box;
+  width: 60%;
+  border: 1px solid #ff6c24;
+  border-radius: 8px 0 0 8px;
+}
+.coupon_view_icon .coupon_ti {
+  display: block;
+  color: #999;
+  letter-spacing: -1.5px;
+}
+.coupon_view_icon .coupon_name {
+  display: block;
+  color: #000;
+  letter-spacing: -1px;
+  margin-top: 3px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+
+.coupon_view_icon .color_box {
+  height: 55px;
+  background: #ff6c24;
+  box-sizing: border-box;
+  width: 40%;
+  float: right;
+  padding: 10px;
+  position: relative;
+  border-radius: 0 8px 8px 0;
+}
+.coupon_view_icon .coupon_discount {
+  color: #fff;
+  margin: 0 7px 0 0;
+  font-weight: 600;
+  background: transparent
+    url("http://www.saemip.com/pages/images/coupon_view_down.png") right 4px
+    no-repeat;
+  background-size: 10px;
+  padding-right: 12px;
+  font-size: 15px;
+}
+.coupon_view_icon .coupon_price {
+  display: block;
+  color: #fff;
+  margin-top: 1px;
+}
+.coupon_view_icon .edge1 {
+  background: #fff;
+  border-radius: 60px;
+  height: 15px;
+  width: 15px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: -8px;
+  top: -10px;
+}
+.coupon_view_icon .edge2 {
+  background: #fff;
+  border-radius: 60px;
+  height: 15px;
+  width: 15px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: -8px;
+  bottom: -10px;
+}
+
+/* 로딩페이지 */
+.minishop_loading_wrap {
+  width: 100%;
+  overflow: hidden;
+}
+.minishop_loading_wrap .floating_box {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -170px;
+  background: #71ad2c;
+}
+.minishop_loading_wrap .logo {
+  padding-bottom: 14px;
+  padding-top: 19px;
+  margin: 0 auto;
+  width: 195px;
+  height: 40px;
+  text-align: center;
+}
+.minishop_loading_wrap .logo img {
+  width: 70%;
+}
+.minishop_loading_wrap .inner_box {
+  overflow: hidden;
+  padding: 28px 0 20px 0;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  background: #ffffff;
+}
+.minishop_loading_wrap .loading {
+  text-align: center;
+}
+.minishop_loading_wrap .text {
+  text-align: center;
+  margin-top: 20px;
+}
+.minishop_loading_wrap .text dl {
+  overflow: hidden;
+  display: inline-block;
+}
+.minishop_loading_wrap .text dt {
+  padding-bottom: 20px;
+  color: #000000;
+  font-size: 13px;
+  font-weight: bold;
+}
+.minishop_loading_wrap .text dt .go_shop {
+  color: #de2a2a;
+  font-size: 13px;
+  font-weight: bold;
+}
+.minishop_loading_wrap .text dd {
+  font-size: 8pt;
+  color: #88898e;
+  line-height: 1.3;
+}
+.minishop_loading_wrap .copyright {
+  font-size: 7pt;
+  letter-spacing: 0px;
+  font-weight: 700;
+  padding-top: 15px;
+  color: #b2b2b2;
+  text-align: center;
+  text-transform: uppercase;
+}
+.minishop_loading_wrap .copyright em {
+  color: #5b5b5b;
+}
+
+.minishop_loading_wrap .loading {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(50, 50, 50, 0.1);
+  border-radius: 50%;
+  border-top-color: #71ad2c;
+  box-sizing: border-box;
+  -webkit-animation: spin 0.8s ease-in-out infinite;
+  -webkit-animation: spin 0.8s ease-in-out infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+/* 리스트타입추가  */
+.upper_link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.minishop_item_list {
+  overflow: hidden;
+  background: #f8f8f8;
+  margin-bottom: 30px;
+}
+.minishop_item_list li {
+  box-sizing: border-box;
+  list-style: none;
+  background: #fff;
+  border-bottom: 1px solid #e1e1e1;
+}
+.minishop_item_list .item_box {
+  overflow: hidden;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  padding: 10px;
+  position: relative;
+  min-height: 125px;
+}
+.minishop_item_list .item_box .photo_area {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.minishop_item_list .item_box .photo_area .thumb {
+  float: left;
+  overflow: hidden;
+  width: 100px;
+}
+.minishop_item_list .item_box .photo_area .thumb img {
+  width: 100%;
+  float: left;
+}
+.minishop_item_list .item_box .info_box {
+  overflow: hidden;
+  margin-left: 110px;
+  padding: 0 10px 10px 0;
+}
+.minishop_item_list .item_box .info_box .add_txt {
+  color: #4b4b4b;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  margin-bottom: 5px;
+}
+.minishop_item_list .item_box .info_box .item_title {
+  color: #131313;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  margin-bottom: 3px;
+}
+.minishop_item_list .item_box .info_box .item_info {
+  color: #848484;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  line-height: 14px;
+}
+.minishop_item_list .item_box .bottom_info {
+  position: absolute;
+  bottom: 8px;
+  left: 120px;
+}
+.minishop_item_list .item_box .bottom_info .price {
+  color: #fc5b9f;
+  font-size: 16px;
+  font-weight: 600;
+  float: left;
+}
+.minishop_item_list .item_box .bottom_info .sale_num {
+  color: #131313;
+  float: left;
+  margin: 3px 0 0 8px;
+  font-size: 12px;
+}
+
+/* 반응형 
+@media screen and (min-width:550px) {
+.minishop_item_list li {width:50%; float:left; }
+.minishop_item_list li:nth-of-type(2n) {border-left:1px solid #e1e1e1; ;}
+}*/
+
+/* 미니샵 헤더 */
+.minishop_header {
+  overflow: hidden;
+  text-align: center;
+  background: #fff;
+  position: relative;
+}
+.minishop_header .logo_box {
+  padding: 15px 30px 12px 30px;
+}
+.minishop_header img {
+  height: 25px;
+}
+.minishop_header .btn_slide {
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  padding-top: 8px;
+}
+.minishop_header .btn_slide .shape {
+  display: inline-block;
+  width: 20px;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+.minishop_header .btn_slide .shape:before {
+  content: "";
+  width: inherit;
+  height: inherit;
+  background: inherit;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+.minishop_header .btn_slide .shape:after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  background: inherit;
+  position: absolute;
+  left: 0;
+  top: 14px;
+}
+
+/* 미니샵아이템 연결배너 */
+.minishop_item_banner {
+  background: #eee;
+  overflow: hidden;
+  padding: 8px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.minishop_item_banner li {
+  list-style: none;
+  width: 33.333%;
+  float: left;
+  box-sizing: border-box;
+  padding: 2px;
+}
+.minishop_item_banner .link {
+  overflow: hidden;
+}
+.minishop_item_banner .link img {
+  float: left;
+  width: 100%;
+}
+
+/* 반응형 */
+@media screen and (min-width: 550px) {
+  .minishop_item_banner li {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .minishop_item_banner li {
+    width: 20%;
+  }
+}
+
+/* 미니샵 푸터  */
+.minishop_footer {
+  overflow: hidden;
+  text-align: center;
+  background: #fff;
+  padding: 10px 0;
+}
+.minishop_footer img {
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* 2015-06-13 후기추가 */
+.inner_board_list .post .btn a {
+  display: inline-block;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  background: #fff;
+  line-height: 24px;
+  padding: 0 15px;
+  color: #666;
+  font-size: 11px;
+  font-weight: bold;
+  margin-left: 2px;
+  float: left;
+}
+/* 점수별모양 */
+#container_sub .mark_star {
+  width: 76px;
+}
+.inner_board_list .mark_star {
+  display: inline-block;
+  background: transparent
+    url("http://www.saemip.com/pages/images/common/mark.png") no-repeat;
+  background-size: 75px;
+  background-position: 0 0;
+  width: 75px;
+  height: 15px;
+  margin-left: 5px;
+}
+.inner_board_list .mark_star .star {
+  display: inline-block;
+  background: transparent
+    url("http://www.saemip.com/pages/images/common/mark.png") no-repeat;
+  background-size: 75px;
+  background-position: 0 -15px;
+  height: 15px;
+}
+/* 셀렉트박스 */
+.view_conts_review .select2 {
+  display: block;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #d4d4d4;
+  background: #fff;
+  margin-bottom: 3px;
+  box-sizing: border-box;
+  clear: both;
+}
+.view_conts_review .select2:only-child {
+  margin-bottom: 0;
+}
+.view_conts_review .select2 select {
+  width: 100%;
+  height: 40px;
+  border: none;
+  color: #333;
+  font-size: 14px;
+  text-indent: 10px;
+  letter-spacing: -1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-appearance: none;
+  background: transparent;
+}
+.view_conts_review .select2 .ic_arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  border-left: 1px solid #e3e3e3;
+  margin-top: -15px;
+  background: #fff
+    url("http://www.saemip.com/pages/images/common/select_arrow.png") center
+    center no-repeat;
+  background-size: 12px;
+}
+
+.review_textarea {
+  border: 1px solid #d4d4d4;
+  background: #fff !important;
+  line-height: 18px;
+  color: #333;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.review_textarea:focus {
+  color: #000 !important;
+}
+.review_textarea::-webkit-input-placeholder {
+  color: #999;
+}
+.review_textarea::input-placeholder {
+  color: #999;
+}
+.review_textarea:-moz-placeholder {
+  color: #999;
+}
+.review_textarea::-moz-placeholder {
+  color: #999;
+}
+.review_textarea:-ms-input-placeholder {
+  color: #999;
+}
+
+/* ●●●●●●●●●● 레이어팝업 */
+.cm_ly_pop_tp {
+  border: 2px solid #2c2f34;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #2c2f34;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  margin: 10px;
+}
+.cm_ly_pop_tp .cm_bottom_button {
+  padding: 20px 0 0 0;
+}
+
+/* 기본형 */
+.cm_ly_pop_tp .title_box {
+  padding: 0 20px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 17px;
+  position: relative;
+  background: #2c2f34;
+}
+.cm_ly_pop_tp .btn_close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+}
+.cm_ly_pop_tp .btn_close .shape {
+  width: 25px;
+  height: 2px;
+  background: #777;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -1px 0 0 -8px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.cm_ly_pop_tp .btn_close .shape:before {
+  content: "";
+  background: #808080;
+  width: 2px;
+  height: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -12px 0 0 -1px;
+}
+.cm_ly_pop_tp .inner_box {
+  overflow: hidden;
+  background: #fff;
+}
+.cm_ly_pop_tp .top_txt {
+  color: #555;
+  line-height: 18px;
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+  background: #eee;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+}
+.cm_ly_pop_tp .top_txt strong {
+  color: #ff2d2d;
+}
+.cm_ly_pop_tp .form_box {
+  overflow: hidden;
+  position: relative;
+  background: #eee;
+}
+.cm_ly_pop_tp .form_box li {
+  list-style: none;
+  position: relative;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+.cm_ly_pop_tp .form_box .opt {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  height: 45px;
+  line-height: 45px;
+}
+.cm_ly_pop_tp .form_box .value {
+  margin-left: 95px;
+  padding: 8px 10px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.cm_ly_pop_tp .form_box .input_design {
+  background: #eee;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.cm_ly_pop_tp .form_box .input_design:focus {
+  color: #000;
+  background-color: #fafafa;
+}
+.cm_ly_pop_tp .form_box .input_design:first-of-type {
+  margin-top: 0;
+}
+.cm_ly_pop_tp .form_box .textarea_design {
+  background: #eee;
+  line-height: 16px;
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+  border: 0;
+  padding: 10px;
+}
+.cm_ly_pop_tp .form_box .textarea_design:focus {
+  color: #000;
+  background-color: #fafafa;
+}
+.cm_ly_pop_tp .form_box .select_design {
+  float: left;
+  padding: 0 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  height: 45px;
+}
+.cm_ly_pop_tp .cm_bottom_button {
+  margin: 0 10px 10px 10px;
+}
+
+/* 부분취소 상품정보 추가 2015-06-29 */
+.cm_ly_pop_tp .this_item {
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+  padding-top: 0;
+  border-bottom: 1px solid #ddd;
+  min-height: 110px;
+  box-sizing: border-box;
+}
+.cm_ly_pop_tp .this_item .thumb {
+  width: 90px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  overflow: hidden;
+}
+.cm_ly_pop_tp .this_item .thumb img {
+  width: 100%;
+  float: left;
+}
+.cm_ly_pop_tp .this_item .info {
+  margin-left: 100px;
+}
+.cm_ly_pop_tp .this_item .info dt {
+  color: #333;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+.cm_ly_pop_tp .this_item .info dd {
+  margin-top: 5px;
+  color: #999;
+}
+.cm_ly_pop_tp .this_item .info_title {
+  color: #ff6600;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 14px;
+  letter-spacing: -1px;
+}
+.cm_ly_pop_tp .this_item .info_price {
+  margin-top: 10px;
+  border-top: 1px dashed #ddd;
+  padding-top: 10px;
+  overflow: hidden;
+}
+.cm_ly_pop_tp .this_item .info_price .txt {
+  display: block;
+  color: #666;
+  font-size: 13px;
+}
+
+.cm_board_form {
+}
+.cm_board_form li {
+  list-style: none;
+  position: relative;
+  border-bottom: 1px solid #dedede;
+  width: 100%;
+  clear: both;
+}
+.cm_board_form .opt {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  color: #888;
+  padding-left: 12px;
+  margin-top: -6px;
+}
+.cm_board_form .opt {
+  background: transparent
+    url("http://www.saemip.com/pages/images/cm_images/member_form_bullet.png")
+    left center no-repeat;
+  background-size: 8px;
+}
+.cm_board_form .value {
+  margin-left: 95px;
+  background: #fff;
+  overflow: hidden;
+  padding: 10px 10px;
+  line-height: 15px;
+  font-size: 12px;
+  color: #aaa;
+  letter-spacing: -0.5px;
+  overflow: hidden;
+}
+.cm_board_form .ess .opt {
+  background-image: url("http://www.saemip.com/pages/images/cm_images/member_form_bullet2.png");
+}
+.cm_board_form .input_design {
+  box-sizing: border-box;
+  float: left;
+  width: 100%;
+  background: #f1f1f1;
+  border: 1px solid #c1c1c1;
+  border-right: 0;
+  border-bottom: 0;
+  height: 35px;
+  padding: 0 10px;
+  color: #666;
+  border-radius: 5px;
+  letter-spacing: 0px;
+  font-size: 13px;
+}
+.cm_board_form .input_design:focus {
+  background-color: #ddd;
+  color: #333;
+}
+.cm_board_form .input_design + .input_design {
+  margin-top: 5px;
+}
+.cm_board_form .textarea_design {
+  background: #f1f1f1;
+  border: 1px solid #c1c1c1;
+  border-right: 0;
+  border-bottom: 0;
+  line-height: 18px;
+  height: 140px;
+  padding: 10px;
+  color: #666;
+  border-radius: 5px;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+.cm_board_form .textarea_design:focus {
+  background-color: #ddd;
+  color: #333;
+}
+.cm_board_form label {
+  overflow: hidden;
+  float: left;
+  line-height: 21px;
+  padding: 5px 10px 5px 0;
+}
+.cm_board_form .editor .opt {
+  position: relative;
+  margin-top: 10px;
+}
+.cm_board_form .editor .value {
+  margin: 0;
+}
+.cm_board_form .tip_txt {
+  clear: both;
+  padding-top: 5px;
+}
+.cm_board_form .tip_txt dd {
+  line-height: 15px;
+  color: #999;
+  font-size: 11px;
+}
+.cm_board_form .tip_txt dt {
+  line-height: 15px;
+  color: #ff4949;
+  font-size: 11px;
+}
+.cm_board_form .input_date {
+  background: #f1f1f1
+    url("http://www.saemip.com/pages/images/cm_images/ic_date.png") 40px center
+    no-repeat;
+  background-size: 15px;
+  padding-left: 65px;
+}
+.cm_board_form .input_wrap {
+  position: relative;
+  overflow: hidden;
+}
+.cm_board_form .input_wrap .upper_txt {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  line-height: 35px;
+}
+.cm_board_form .input_wrap + .input_wrap {
+  margin-top: 5px;
+}
+
+.cm_board_form .btn_photo_box {
+  background: #4f515b;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  padding: 0;
+  text-align: center;
+  height: 45px;
+}
+.cm_board_form .btn_photo_box {
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+  display: block;
+  width: 100%;
+  float: none;
+}
+.cm_board_form .btn_photo_box .upper_txt {
+  background: transparent
+    url("http://www.saemip.com/pages/images/cm_images/input_photo.png") left 2px
+    no-repeat;
+  background-size: 18px;
+  color: #fff;
+  padding-left: 24px;
+  margin: 12px 0;
+  font-size: 13px;
+}
+.cm_board_form .input_photo {
+  color: transparent;
+  background: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 555;
+  visibility: hidden;
+}
+.cm_board_form .img_preview {
+  width: 100% !important;
+}
+.cm_board_form .photo_box {
+  margin: 5px 0 0 0;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 5px;
+}
+.cm_board_form .photo_box img {
+  width: 100%;
+  float: left;
+}
+.cm_board_form .photo_box .photo_inner {
+  background: rgba(0, 0, 0, 0.05)
+    url("http://www.saemip.com/pages/images/cm_images/input_photo_none.png")
+    center center no-repeat;
+  background-size: 40px;
+  min-height: 120px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.cm_board_form .btn_photo_del {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.button_pack {
+  display: block;
+  box-sizing: border-box;
+}
+.button_pack a,
+.button_pack input,
+.button_pack button {
+  width: 100%;
+  text-align: center;
+  background-image: none;
+  position: relative;
+  display: block;
+  font-weight: normal;
+  word-wrap: normal;
+  word-break: keep-all;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.button_pack .btn_sm_white,
+.button_pack .btn_sm_black,
+.button_pack .btn_sm_color {
+  font-size: 12px;
+  height: 25px;
+  line-height: 23px;
+  padding: 0 10px;
+}
+.button_pack .btn_sm_white {
+  background: #fff;
+  color: #333 !important;
+  border: 1px solid #ccc;
+}
+.button_pack .btn_sm_black {
+  background: #505258;
+  color: #fff !important;
+  border: 1px solid #505258;
+}
+.button_pack .btn_sm_color {
+  background: #fb5074;
+  color: #fff !important;
+  border: 1px solid #fb5074;
+}
+
+.button_pack .btn_md_white,
+.button_pack .btn_md_black,
+.button_pack .btn_md_color {
+  font-size: 13px;
+  height: 35px;
+  line-height: 33px;
+  padding: 0 10px;
+}
+.button_pack .btn_md_white {
+  background: #fff;
+  color: #333 !important;
+  border: 1px solid #ccc;
+}
+.button_pack .btn_md_black {
+  background: #505258;
+  color: #fff !important;
+  border: 1px solid #505258;
+}
+.button_pack .btn_md_color {
+  background: #fb5074;
+  color: #fff !important;
+  border: 1px solid #fb5074;
+}
+
+.button_pack .btn_lg_white,
+.button_pack .btn_lg_black,
+.button_pack .btn_lg_color {
+  font-size: 16px;
+  height: 50px;
+  line-height: 47px;
+  padding: 0 10px;
+}
+.button_pack .btn_lg_white {
+  background: #fff;
+  color: #333 !important;
+  border: 1px solid #ccc;
+}
+.button_pack .btn_lg_black {
+  background: #505258;
+  color: #fff !important;
+  border: 1px solid #505258;
+}
+.button_pack .btn_lg_color {
+  background: #1f701c;
+  color: #fff !important;
+  border: 1px solid #1f701c;
+}
+
+/* ●●●●● 상품옵션 띄우기 2015-09-30  */
+
+.view_float_option {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.view_float_option .closed {
+}
+.view_float_option .closed .box {
+  background: #ffffff;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-top: 1px solid #acacac;
+  overflow: hidden;
+}
+
+.view_float_option .btn_open {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 80px;
+  margin: -25px 0 0 -40px;
+}
+.view_float_option .btn_open img {
+  width: 100%;
+  margin: 1px 0 0 0;
+}
+.view_float_option .btn_open_tx {
+  background: #1f701c;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+}
+
+.view_float_option .open {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+}
+.view_float_option .open .box {
+  background: #ffffff;
+  height: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+  border-top: 1px solid #acacac;
+}
+.view_float_option .open a {
+  color: #fff;
+  display: block;
+}
+.view_float_option .open .title {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  padding: 5px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.view_float_option .open .exp {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.view_float_option .btn_close {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 80px;
+  margin: -25px 0 0 -40px;
+}
+.view_float_option .btn_close img {
+  width: 100%;
+  margin: 1px 0 0 0;
+}
+
+.view_float_option .opt_float {
+  padding: 10px 0 0 0;
+  overflow: hidden;
+}
+.view_float_option .opt_float .select {
+  border: none;
+  height: 30px;
+}
+.view_float_option .opt_float .select select {
+  height: 30px;
+  line-height: 30px;
+  padding: 0;
+}
+.view_float_option .opt_float .select {
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #d4d4d4;
+  background: #fff;
+  margin-bottom: 3px;
+  box-sizing: border-box;
+}
+.view_float_option .opt_float .select:only-of-type {
+  margin-bottom: 0;
+}
+.view_float_option .opt_float .select select {
+  width: 100%;
+  height: 40px;
+  border: none;
+  color: #333;
+  text-indent: 10px;
+  letter-spacing: -1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-appearance: none;
+  background: transparent;
+}
+.view_float_option .opt_float .select .ic_arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  border-left: 1px solid #e3e3e3;
+  margin-top: -15px;
+  background: transparent
+    url("http://www.saemip.com/pages/images/select_arrow.png") center center
+    no-repeat;
+  background-size: 12px;
+}
+
+.view_float_option .opt_list {
+  background: #fff;
+  overflow: auto;
+  height: 100px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.view_float_option .opt_list li {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 6px;
+  list-style: none;
+  min-height: 30px;
+}
+.view_float_option .opt_list li:last-child {
+  border-bottom: none;
+}
+.view_float_option .opt_list .name {
+  display: inline-block;
+  margin-right: 115px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -1px;
+}
+.view_float_option .opt_list .name b {
+  color: #000;
+  font-weight: normal;
+}
+
+.view_float_option .updown {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -14px;
+}
+.view_float_option .updown a {
+  width: 25px;
+  height: 26px;
+  line-height: 24px;
+  text-align: center;
+  float: left;
+  margin: 0 1px;
+  background: #e9e9e9;
+  font-family: helvetica;
+  font-size: 23px;
+  color: #333;
+}
+.view_float_option .updown a:last-child {
+  color: #fc5b9f;
+}
+.view_float_option .updown input {
+  width: 30px;
+  padding: 0 5px;
+  text-align: center;
+  line-height: 26px;
+  height: 26px;
+  box-sizing: border-box;
+  float: left;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+.view_float_option .sum_float {
+  text-align: right;
+  font-size: 14px;
+  padding: 5px 0;
+  color: #000000;
+  font-weight: bold;
+}
+.view_float_option .sum_float b {
+  font-size: 24px;
+  color: #1f701c;
+  font-family: helvetica;
+}
+
+.view_float_option .btn_area_float {
+  margin: 5px 0;
+  overflow: hidden;
+  position: relative;
+}
+.view_float_option .btn_area_float a {
+  height: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 0px;
+  display: block;
+  box-sizing: border-box;
+}
+.view_float_option .btn_area_float .btn_order {
+  background: #1f701c;
+  color: #fff;
+  margin: 0 95px;
+}
+.view_float_option .btn_area_float .btn_cart {
+  background: #fc5b9f;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 90px;
+}
+.view_float_option .btn_area_float .btn_wish {
+  background: #fff;
+  border: 1px solid #1f701c;
+  color: #1f701c;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 90px;
+}
+
+.view_float_option .wrap_select .txt_box {
+  display: none;
+}
+.view_float_option .btn_add {
+  letter-spacing: -1px;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: #ff4e00;
+  padding: 10px;
+  margin: 5px 0 10px 0;
+}
+
+.view_float_option .coupon_area {
+  clear: both;
+  text-align: center;
+  padding: 5px 0;
+}
+.view_float_option .coupon_area .coupon {
+  background: #fff;
+  border: 2px solid #ea3136;
+  color: #ea3136;
+  line-height: 30px;
+  height: 30px;
+  padding: 0 8px 0 0;
+  letter-spacing: -0.5px;
+  overflow: hidden;
+}
+.view_float_option .coupon_area .coupon b {
+  background: #ea3136;
+  color: #fff;
+  line-height: 30px;
+  height: 30px;
+  display: inline-block;
+  padding: 0 10px 0 8px;
+  margin-right: 8px;
+  float: left;
+}
+.view_float_option .coupon_area .coupon_ok {
+  background: #ddd;
+  color: #333;
+  border: 2px solid #333;
+}
+.view_float_option .coupon_area .coupon_ok b {
+  background: #333;
+}
+
+.view_float_open .open {
+  display: block;
+}
+.view_float_open .closed {
+  display: none;
+}
+
+/* 2015-11-27 메인타이틀 추가 */
+.new_main_title {
+  clear: both;
+  padding: 15px 10px 10px 10px;
+  overflow: hidden;
+  border-bottom: 2px solid #333;
+}
+.new_main_title .title_box {
+  overflow: hidden;
+}
+.new_main_title .first_txt {
+  color: #1f701c;
+  float: left;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+.new_main_title .first_txt strong {
+  color: #000;
+}
+.new_main_title .second_txt {
+  float: left;
+  font-size: 12px;
+  letter-spacing: -0.5px;
+  margin: 11px 0 0 5px;
+  color: #4d4d4d;
+}
+
+/* 2015-11-27 네비 추가 */
+.new_nav {
+  background: #1f701c;
+  overflow: hidden;
+}
+.new_nav .inner_box {
+  display: table;
+  width: 100%;
+  text-align: center;
+}
+.new_nav .inner_box ul {
+  display: table-row;
+}
+.new_nav .inner_box li {
+  display: table-cell;
+  width: 1%;
+}
+.new_nav .inner_box .menu {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  height: 45px;
+  line-height: 45px;
+  display: block;
+  letter-spacing: -0.5px;
+}
+.new_nav .inner_box .menu .txt {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  height: 45px;
+  line-height: 45px;
+  display: inline-block;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+.new_nav .inner_box .hit .txt {
+  border-bottom: 4px solid #1f701c;
+}
+
+/* 2016-08-17 비포애프터 */
+.new_beafter {
+  overflow: hidden;
+  padding: 10px;
+  background: #4d505d;
+  margin: 20px 0;
+}
+.new_beafter .beafter_title {
+  text-align: center;
+  background: #4d505d;
+  color: #fc5b9f;
+  font-size: 19px;
+  padding: 0 10px 10px 10px;
+  font-weight: 600;
+}
+.new_beafter .beafter_conts {
+  background: #fff;
+  padding: 10px;
+}
+
+/* 2016-09-05 요청에 의한 네비 변경 */
+.new_nav .inner_box .menu .txt {
+  font-size: 12px;
+  letter-spacing: 0px;
+}
+
+/* 2016-09-19 따라다니는 해더 SSJ */
+#float_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  z-index: 300;
+  border-bottom: 1px solid #eee;
+}
+.float_tab {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  z-index: 300;
+}
+
+/* 맞춤제작_상품후기 */
+.board_epilogue {
+  overflow: hidden;
+}
+.board_epilogue .top_bn {
+  overflow: hidden;
+}
+.board_epilogue .top_bn img {
+  float: left;
+  width: 100%;
+}
+.board_epilogue .epi_list {
+  overflow: hidden;
+}
+.board_epilogue .epi_list .posting {
+  overflow: hidden;
+}
+.board_epilogue .epi_list li {
+  border-bottom: 1px solid #d4d4d4;
+  text-align: center;
+  padding: 0 10px 10px;
+  position: relative;
+  overflow: hidden;
+  min-height: 90px;
+}
+
+.board_epilogue .epi_list .goods {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 80px;
+  box-sizing: border-box;
+}
+.board_epilogue .epi_list .goods .img {
+  border-radius: 10px;
+}
+.board_epilogue .epi_list .goods img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.board_epilogue .epi_list .txt_box {
+  margin-left: 80px;
+}
+
+.board_epilogue .epi_list .content {
+  padding: 10px 10px 0 10px;
+  text-align: left;
+}
+.board_epilogue .epi_list .content .name {
+  overflow: hidden;
+  height: 28px;
+  position: relative;
+}
+.board_epilogue .epi_list .content .upper_link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.board_epilogue .epi_list .content .title {
+  max-width: 88%;
+  font-size: 14px;
+  color: #000;
+  line-height: 28px;
+  height: 28px;
+  float: left;
+}
+.board_epilogue .epi_list .content .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+
+.board_epilogue .epi_list .content .title_icon {
+  overflow: hidden;
+  float: left;
+  height: 20px;
+  margin-left: 5px;
+}
+.board_epilogue .epi_list .content .title_icon .img {
+  float: left;
+  margin-left: 3px;
+}
+.board_epilogue .epi_list .content .title_icon .img img {
+  width: 15px;
+  margin: 6px 0 0 0;
+}
+
+.board_epilogue .epi_list .content .review {
+  font-size: 12px;
+  color: #7f7f7f;
+  line-height: 17px;
+  padding-bottom: 10px;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+
+.board_epilogue .epi_list .btm_box {
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+.board_epilogue .epi_list .mark_box {
+  overflow: hidden;
+  float: left;
+}
+.board_epilogue .epi_list .mark_box .mark {
+  background: transparent
+    url("http://www.saemip.com/pages/images/common/mark.png") left top repeat;
+  width: 65px;
+  height: 13px;
+  display: inline-block;
+  background-size: 65px;
+}
+.board_epilogue .epi_list .mark_box .star {
+  background: transparent
+    url("http://www.saemip.com/pages/images/common/mark.png") left bottom repeat;
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-size: 65px;
+}
+.board_epilogue .epi_list .writer {
+  float: right;
+}
+.board_epilogue .epi_list .writer .id {
+  float: left;
+  font-size: 12px;
+  color: #000;
+  margin: 0 5px 0 0;
+}
+.board_epilogue .epi_list .writer .date {
+  float: left;
+  font-size: 11px;
+  color: #8c8c8c;
+  display: block;
+}
+/* 작은화면 */
+@media screen and (max-width: 350px) {
+  .board_epilogue .epi_list .writer .id {
+    float: none;
+    display: block;
+  }
+  .board_epilogue .epi_list .writer .date {
+    float: none;
+    display: block;
+  }
+}
+
+.board_epilogue .board_head {
+  background: #f7f7f7;
+  color: #444;
+}
+.board_epilogue .board_head .posting_hd {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.board_epilogue .board_head .content {
+  text-align: center;
+  margin-top: 0;
+}
+.board_epilogue .board_head .mark_box {
+  position: relative;
+  top: 0;
+  margin-top: 0;
+  right: 0;
+  height: auto;
+}
+.board_epilogue .board_head .writer {
+  position: relative;
+  top: 0;
+  margin-top: 0;
+}
+
+/* 맞춤제작_상품문의 */
+.board_epilogue.board_answer .open_reply {
+  background: #f3f3f3 url("http://www.saemip.com/pages/images/new_ic_reply.png")
+    21px 13px no-repeat;
+  overflow: hidden;
+  padding: 13px 0;
+  background-size: 20px;
+  margin-top: 10px;
+  text-align: left;
+}
+.board_epilogue.board_answer .open_reply .txt {
+  font-size: 12px;
+  color: #7d7d7d;
+  padding: 0 10px 0 60px;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+.board_epilogue.board_answer .open_reply .writer {
+  float: left;
+  padding-left: 60px;
+  margin-top: 5px;
+}
+
+/* 2016-09-25 좌측슬라이드배너 SSJ */
+.banner_slide {
+  overflow: hidden;
+}
+.banner_slide a {
+  display: block;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  margin-bottom: 0px;
+}
+.banner_slide img {
+  width: 100%;
+  float: left;
+}
+.banner_slide.double {
+  display: inline-block;
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding: 0 2px 0 0;
+}
+.banner_slide.double + .double {
+  padding: 0 0 0 2px;
+}
+.banner_slide.double + a {
+  clear: both;
+}
+
+.slide_sitemap .btn_logout {
+  display: block;
+  text-align: center;
+  margin-top: 3px;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 10px;
+  background: #fff;
+}
+.slide_sitemap .btn_logout .btn {
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  letter-spacing: -1px;
+  color: rgba(0, 0, 0, 0.5);
+}
+/* 페이지네이트 ------------------------------ */
+#container_shop .paginate {
+  text-align: center;
+  margin: 20px 0;
+}
+#container_shop .paginate .inner {
+  display: inline-block;
+}
+#container_shop .paginate a {
+  display: inline-block;
+  position: relative;
+  padding: 0 15px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #d1d1d1;
+  float: left;
+  margin: 0 1px;
+  font-family: helvetica;
+  font-size: 15px;
+  background: #fff;
+}
+
+#container_shop .paginate .on {
+  background: #4d5058;
+  border: 1px solid #454951;
+  color: #fff;
+}
+
+#container_shop .paginate .ic_prev {
+  background-position: -120px -30px;
+  width: 10px;
+  height: 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -7px 0 0 -5px;
+}
+#container_shop .paginate .ic_next {
+  background-position: -130px -30px;
+  width: 10px;
+  height: 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -7px 0 0 -5px;
+}
+
+/* 2016-09-28 추가작업 */
+.item_box .review_info {
+  position: absolute;
+  right: 10px;
+  bottom: 7px;
+}
+.item_box .icon {
+  float: left;
+  background: none;
+  margin-top: 1px;
+}
+.item_box .icon img {
+  width: 13px;
+}
+.item_box b {
+  font-size: 12px;
+  color: #999;
+  margin: 0 0 0 3px;
+}
+
+.new_location {
+  overflow: hidden;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin-left: 5px;
+  overflow-y: hidden;
+}
+.new_location ul {
+  display: inline-block;
+}
+.new_location li {
+  float: left;
+  position: relative;
+}
+.new_location li:before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  margin-top: -5px;
+  width: 1px;
+  height: 9px;
+  background: #ddd;
+}
+.new_location li:first-child:before {
+  display: none;
+}
+.new_location .btn {
+  display: block;
+  font-size: 12px;
+  color: #555;
+  padding: 5px 10px 4px;
+}
+.new_location .hit {
+  border: 1px solid #1f701c;
+  border-radius: 2px;
+}
+.new_location .hit:before {
+  display: none;
+}
+.new_location .hit + li:before {
+  display: none;
+}
+
+.slide_menu {
+  background: #fff;
+}
+
+/* 2017-02-23 LDD 모바일 해당의원에서 진행중인 이벤트 */
+.view_relative .item_box .price {
+  overflow: hidden;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.view_relative .item_box .price .before {
+  float: left;
+  margin: 5px 0 0 0;
+  overflow: hidden;
+  line-height: 1;
+}
+.view_relative .item_box .price .before_price {
+  color: #999;
+  font-size: 13px;
+  position: relative;
+  padding: 0 3px;
+  float: left;
+  line-height: 1;
+}
+.view_relative .item_box .price .before_price:before {
+  content: "";
+  background: #999;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.view_relative .item_box .price .before .unit {
+  display: none;
+}
+
+.view_relative .item_box .price .after {
+  float: center;
+  overflow: hidden;
+  line-height: 1.1;
+}
+.view_relative .item_box .price .after_price {
+  color: #fd5ba0;
+  font-size: 13px;
+  float: center;
+}
+.view_relative .item_box .price .after .unit {
+  color: #fd5ba0;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.view_relative {
+  overflow: hidden;
+  padding: 20px 0 10px 0;
+  background: #fff;
+}
+.view_relative .relative_title {
+  text-align: center;
+  position: relative;
+  margin: 0 0 10px 0;
+}
+.view_relative .relative_title .txt {
+  color: #000;
+  font-size: 17px;
+  position: relative;
+  padding: 0 10px;
+  height: 29px;
+  position: relative;
+  font-family: "NanumSquare";
+}
+.view_relative .relative_title .txt strong {
+  font-weight: 400;
+  color: #fd5ba0;
+}
+
+.view_relative .best_item {
+  overflow: hidden;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  margin: 0 10px;
+}
+.view_relative .best_item ul {
+  display: inline-block;
+}
+.view_relative .best_item li {
+  float: left;
+  box-sizing: border-box;
+  padding: 0 5px;
+  list-style: none;
+  width: 33.333333%;
+}
+.view_relative .best_item .item_box {
+}
+.view_relative .item_box .thumb {
+  border: 1px solid #e1e2e6;
+  box-sizing: border-box;
+}
+.view_relative .item_box .item_name {
+  text-align: center;
+  font-size: 11px;
+  padding: 0;
+  margin-top: 0;
+  line-height: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+.view_relative .item_box .info {
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #e1e2e6;
+  border-top: 0;
+  box-sizing: border-box;
+  height: 50px;
+}
+
+/* 가로형 */
+@media screen and (min-width: 550px) {
+  .view_relative .best_item li {
+    width: 25%;
+  }
+}
+.view_relative .item_box .price {
+  bottom: 3px;
+  left: 5px;
+}
+.view_relative .item_box .before {
+  margin: 0 0 0 0;
+}
+.view_relative .item_box .before_price {
+  font-size: 11px;
+  line-height: 10px;
+}
+.view_relative .item_box .after {
+  margin: -1px 0 0 4px;
+}
+.view_relative .item_box .after_price {
+  font-size: 11px;
+}
+.view_relative .item_box .after .unit {
+  font-size: 11px;
+}
+.view_relative .item_box .real_img {
+  padding: 10px;
+}
+
+.view_relative .prevnext {
+  position: absolute;
+  top: 50px;
+  text-align: center;
+  z-index: 10;
+}
+.view_relative .prevnext img {
+  height: 13px;
+}
+.view_relative .prev {
+  left: -5px;
+}
+.view_relative .next {
+  right: -5px;
+}
+.view_relative .prevnext a {
+  padding: 5px;
+}
+.view_relative .prevnext .icon {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  background: #4b4f5b;
+}
+.view_relative .prevnext.prev .icon:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: absolute;
+  top: 7px;
+  border-top: 0;
+  border-right: 0;
+  left: 10px;
+}
+.view_relative .prevnext.next .icon:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: absolute;
+  top: 7px;
+  border-bottom: 0;
+  border-left: 0;
+  right: 8px;
+}
+
+.view_relative .rolling_icon {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+}
+.view_relative .rolling_icon .lineup {
+}
+.view_relative .rolling_icon .icon {
+  float: left;
+  width: 6px;
+  height: 6px;
+  background: rgba(0, 0, 0, 0.2);
+  margin-left: 3px;
+  border-radius: 100px;
+}
+.view_relative .rolling_icon .active {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.view_relative .real_img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.view_relative .real_img img {
+  float: left;
+  width: 100%;
+}
+.view_relative .fake_img {
+  overflow: hidden;
+}
+.view_relative .fake_img img {
+  float: left;
+  width: 100%;
+}
+
+.view_relative .item_box {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 150px;
+}
+.view_relative .item_box .thumb {
+  /*overflow:hidden;*/
+  position: relative;
+  background: #fff url("/m/images/none_thumb_l.png") center center no-repeat;
+  background-size: 35px;
+}
+.view_relative .item_box .upper_ic {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
+.view_relative .item_box .upper_ic img {
+  float: left;
+  height: 15px;
+}
+.view_relative .item_box .upper_ic_ess {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  overflow: hidden;
+}
+.view_relative .item_box .upper_ic_ess img {
+  float: left;
+}
+/* 뒤로버튼 추가 2017-08-21 ARA */
+.top_header .btn_back {
+  background: transparent
+    url("http://www.saemip.com/pages/images/header_back.png") center center
+    no-repeat;
+  background-size: 30px;
+}
+
+/* 비회원글쓰기 약관동의 2017-08-23 SSJ */
+.cm_step_agree {
+  overflow: hidden;
+  background: #fafafa;
+  padding: 0px 8px 5px 8px;
+}
+.cm_step_agree .text_box {
+  background: #fff;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+.cm_step_agree .textarea_design {
+  background: #fff;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 16px;
+  height: 80px;
+  color: #999;
+  font-size: 11px;
+}
+.cm_step_agree textarea {
+  background: #fff;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 16px;
+  height: 80px;
+  color: #999;
+  font-size: 11px;
+}
+.cm_step_agree .agree_check {
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+}
+.cm_step_agree .agree_check label {
+  padding: 10px 0;
+  overflow: hidden;
+  color: #555;
+  font-size: 13px;
+}
+
+/* 회원가입시 만 14세미만 가입제한 문구 2017-08-30 SSJ */
+.age_info {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/*  //  LCY 2018-02-21 -- 게시판 추가 */
+.file_thumb[data-list-type="event2"] img {
+  max-width: 296px;
+  max-height: 180px;
+}
+.file_thumb[data-list-type="news"] img {
+  max-width: 170px;
+  max-height: 120px;
+}
+.file_thumb input[type="checkbox"] {
+}
+
+/* {{{이벤트분류설정}}}  */
+.event_info {
+}
+.event_info a {
+  color: #1f701c;
+}
 @media screen and (min-width: 600px) {
   /* ●●●●● 상품쿠폰관련 추가 2015-06-23 */
 
@@ -5170,8 +5247,6 @@ input[type=email] {border:1px solid #d4d4d4; background:#fff; height:40px; line-
     width: 100%;
     border-top: 3px solid #1f701c;
   }
-  .view_opt_layer .layout_fix {
-  } /* 2015-03-24 수정 */
 
   /* ●● 레이어상단버튼영역 */
   .view_opt_layer .fly_btn_area {
@@ -5258,7 +5333,8 @@ input[type=email] {border:1px solid #d4d4d4; background:#fff; height:40px; line-
     width: 810px;
     border-right: 1px solid #ddd;
     padding: 30px 11px 50px 0;
-  } /* 2015-03-24 수정 */
+  }
+  /* 2015-03-24 수정 */
   .view_opt_layer .opt_top {
     position: relative;
     overflow: hidden;

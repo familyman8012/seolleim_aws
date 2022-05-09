@@ -4,7 +4,7 @@ import axios from "axios";
 import useMediaUp from "@src/hooks/useMediaUp";
 import AdminLayout from "@components/layouts/Admin/layout";
 import { WrapDetailMV } from "./styles";
-import { BoxInput } from "../index/styles";
+import { BoxInput } from "../notice/styles";
 
 function Mainvis() {
   //이미지 업로드 훅
